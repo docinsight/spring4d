@@ -1,0 +1,55 @@
+{
+  "project": {
+    "name": "spring4d",
+    "title": "Spring4D",
+    "description": "Documentation showcase for the Spring4D, generated with DocInsight.",
+    "copyright": "Unofficial DocInsight showcase for Spring4D. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\nCopyright © 2009 - present Spring4D team. All Rights Reserved.",
+    "homepage": "https://spring4d.org",
+    "repository": "https://bitbucket.org/sglienke/spring4d"
+  },
+  "sources": {
+    "main": {
+      "type": "delphi",
+      "files": [
+        "Packages/Delphi13/Spring4D.groupproj"
+      ],
+      "options": {
+        "compatibility": "delphi_13",
+        "platform": "Win32"
+      }
+    }
+  },
+  "content": {
+    "guide": {
+      "title": "Guide",
+      "type": "markdown",
+      "root": "docs/guide",
+      "mount": "/"
+    },
+    "api": {
+      "title": "API Reference",
+      "type": "delphi",
+      "source": "main"
+    }
+  },
+  "site": {
+    "title": "Spring4D Docs",
+    "title_suffix": " | DocInsight Showcase",
+    "robots": "noindex,follow"
+  },
+  "output": {
+    "default_targets": [
+      "site"
+    ],
+    "targets": {
+      "site": {
+        "type": "html",
+        "path": "dist/docs/site",
+        "content": [
+          "guide",
+          "api"
+        ]
+      }
+    }
+  }
+}

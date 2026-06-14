@@ -37,3 +37,6 @@ Tests/Bin/
 
 # TestInsight files
 TestInsightSettings.ini
+
+.docinsight
+dist/docs/
