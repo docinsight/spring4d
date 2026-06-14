@@ -1,5 +1,7 @@
 ![Spring4D medium.png](https://bitbucket.org/repo/jxX7Lj/images/3496466100-Spring4D%20medium.png)
 
+> [!NOTE]
+> This is an unofficial DocInsight showcase for [Spring4D](https://spring4d.org), a modern, comprehensive framework for Delphi.
 
 Spring4D is an open-source code library for Embarcadero Delphi XE and higher.
 It consists of a number of different modules that contain a base class library (common types, interface based collection types, reflection extensions) and a dependency injection framework. It uses the Apache License 2.0.
@@ -8,7 +10,7 @@ Join us on the [Spring4D Google Group](https://groups.google.com/forum/#!forum/s
 
 Installation
 ------------
-Just run the Build.exe and select the Delphi versions you want to install Spring4D for.  
+Just run the Build.exe and select the Delphi versions you want to install Spring4D for.
 Alternatively open the project group in your IDE and compile the packages. Add the `Library\<delphiversion>\<config>` folder to your library path to access the precompiled units.
 
 Current version
