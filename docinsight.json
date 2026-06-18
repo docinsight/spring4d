@@ -2,10 +2,17 @@
   "project": {
     "name": "spring4d",
     "title": "Spring4D",
-    "description": "Documentation showcase for the Spring4D, generated with DocInsight.",
-    "copyright": "Unofficial DocInsight showcase for Spring4D. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\nCopyright © 2009 - present Spring4D team. All Rights Reserved.",
+    "description": "A modern, comprehensive code library for Delphi.",
+    "copyright": "Copyright © 2009 - present Spring4D team. All Rights Reserved.",
     "homepage": "https://spring4d.org",
     "repository": "https://bitbucket.org/sglienke/spring4d"
+  },
+  "variables": {
+    "showcase_repo": {
+      "type": "link",
+      "label": "showcase repository",
+      "href": "https://github.com/docinsight/spring4d"
+    }
   },
   "sources": {
     "main": {
@@ -35,7 +42,12 @@
   "site": {
     "title": "Spring4D Docs",
     "title_suffix": " | DocInsight Showcase",
-    "robots": "noindex,follow"
+    "description": "An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight.",
+    "base_path": "/spring4d/",
+    "robots": "noindex,follow",
+    "footer": {
+      "notice": "Unofficial DocInsight showcase for {{spring4d.homepage}}. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\n{{spring4d.copyright}}\nBuilt with {{sys.docinsight}}. View the {{showcase_repo}}."
+    }
   },
   "output": {
     "default_targets": [
