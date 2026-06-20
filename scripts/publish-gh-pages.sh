@@ -62,6 +62,24 @@ git_dir="$(git -C "$repo_root" rev-parse --absolute-git-dir)"
 site_dir="$repo_root/dist/docs/site"
 tmp_dir=""
 
+write_redirect_index() {
+  local target=$1
+
+  cat > "$publish_dir/index.html" <<HTML
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Spring4D Docs | Redirect</title>
+<meta http-equiv="refresh" content="0; url=$target" />
+</head>
+<body>
+<p>Redirecting to <a href="$target">$target</a>.</p>
+</body>
+</html>
+HTML
+}
+
 cleanup() {
   local status=$?
 
@@ -109,8 +127,8 @@ index_file="$tmp_dir/index"
 mkdir -p "$publish_dir"
 
 rsync -a --delete \
-  --exclude='/.docinsight.build' \
-  --exclude='/.docinsight-build' \
+  --exclude='.docinsight.build' \
+  --exclude='.docinsight-build' \
   "$site_dir/" "$publish_dir/"
 
 if [[ -z "$(find "$publish_dir" -mindepth 1 -print -quit)" ]]; then
@@ -119,8 +137,30 @@ if [[ -z "$(find "$publish_dir" -mindepth 1 -print -quit)" ]]; then
 fi
 
 if [[ ! -f "$publish_dir/index.html" ]]; then
-  echo "index.html not found in built site: $site_dir" >&2
-  exit 1
+  version_index_count=0
+  version_index=""
+
+  while IFS= read -r candidate; do
+    version_index_count=$((version_index_count + 1))
+    version_index=$candidate
+  done < <(find "$publish_dir" -mindepth 2 -maxdepth 2 -type f -name index.html | sort)
+
+  if [[ $version_index_count -ne 1 ]]; then
+    echo "index.html not found in built site: $site_dir" >&2
+    exit 1
+  fi
+
+  redirect_target="${version_index#"$publish_dir"/}"
+  version_dir="${redirect_target%/index.html}"
+  version_redirect="$(sed -n 's/.*url=\([^" >]*\).*/\1/p' "$version_index" | head -n 1)"
+
+  if [[ -n "$version_redirect" && "$version_redirect" != /* && "$version_redirect" != *://* ]]; then
+    redirect_target="$version_dir/$version_redirect"
+  else
+    redirect_target="$version_dir/"
+  fi
+
+  write_redirect_index "$redirect_target"
 fi
 
 touch "$publish_dir/.nojekyll"

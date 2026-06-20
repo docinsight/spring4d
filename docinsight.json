@@ -43,10 +43,10 @@
     "title": "Spring4D Docs",
     "title_suffix": " | DocInsight Showcase",
     "description": "An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight.",
-    "base_path": "/spring4d/",
+    "base_path": "/spring4d/2.0",
     "robots": "noindex,follow",
     "footer": {
-      "notice": "Unofficial DocInsight showcase for {{spring4d.homepage}}. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\n{{spring4d.copyright}}\nBuilt with {{sys.docinsight}}. View the {{showcase_repo}}."
+      "notice": "Unofficial DocInsight showcase for {{spring4d.homepage}}. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\n{{spring4d.copyright}}\nGenerated from a showcase branch based on Spring4D 2.0.2.\nBuilt with {{sys.docinsight}}. View the {{showcase_repo}}."
     }
   },
   "output": {
@@ -56,7 +56,7 @@
     "targets": {
       "site": {
         "type": "html",
-        "path": "dist/docs/site",
+        "path": "dist/docs/site/2.0",
         "content": [
           "guide",
           "api"
