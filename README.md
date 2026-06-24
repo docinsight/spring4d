@@ -1,7 +1,7 @@
 ![Spring4D medium.png](https://bitbucket.org/repo/jxX7Lj/images/3496466100-Spring4D%20medium.png)
 
 > [!NOTE]
-> This is an unofficial DocInsight showcase for [Spring4D](https://spring4d.org), a modern, comprehensive code library for Delphi.
+> This repository is an experimental DocInsight output preview based on a showcase branch of [Spring4D](https://spring4d.org). It is not official Spring4D documentation and is not affiliated with, sponsored by, or endorsed by the Spring4D maintainers.
 
 Spring4D is an open-source code library for Embarcadero Delphi XE and higher.
 It consists of a number of different modules that contain a base class library (common types, interface based collection types, reflection extensions) and a dependency injection framework. It uses the Apache License 2.0.
