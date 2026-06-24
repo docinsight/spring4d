@@ -1,8 +1,12 @@
 # Introduction
 
 > [!NOTE]
-> This is an unofficial documentation showcase for {{spring4d.homepage}}, built with a prerelease version of DocInsight 2026.1, which has not yet been publicly released.
+> This is an unofficial DocInsight-generated showcase based on {{spring4d.homepage}} source code.
+> It is not affiliated with, sponsored by, or endorsed by the Spring4D project or maintainers.
+> The official Spring4D repository and documentation remain the authoritative source.
+>
+> This preview was built with a prerelease version of **DocInsight 2026.1**.
 
-This site demonstrates how {{sys.docinsight}} can generate navigable API reference documentation from a real Delphi codebase. It currently publishes a generated API reference for the Spring4D 2.0 release line.
+This site is a {{sys.docinsight}} output preview generated from a showcase branch based on Spring4D 2.0.2. It demonstrates generated API reference navigation, symbol pages, and cross-links on a real Delphi codebase.
 
 Start with the <xref:api/Spring.Collections/IList`1> interface as an example.
