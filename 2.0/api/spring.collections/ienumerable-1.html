@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEnumerable&lt;T&gt; Interface | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.base" />
+  <meta name="uid" content="spring4d.api/spring.collections/ienumerable`1" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-base.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.base/index.html" class="cref">Spring.Base</a>
+            </li>
+            <li
+              class="breadcrumbs-item">
+              <a href="index.html" class="cref">Spring.Collections</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              IEnumerable&lt;T&gt;
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="ienumerable-1.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  IEnumerable&lt;T&gt; Interface</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#definition">Definition</a>
+  </li>
+  <li>
+    <a href="#properties">Properties</a>
+  </li>
+  <li>
+    <a href="#methods">Methods</a>
+  </li>
+</ol>
+        </nav>
+
+        <div class="heading-wrapper" data-heading-level="h2">
+  <a class="anchor-link" href="#definition" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+  <h2 id="definition">Definition</h2>
+</div>
+
+<div class="metadata">
+  <dl class="attributeList">
+    <dt>Unit:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Collections
+      </span>
+    </dd>
+  </dl>
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Base
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+<div class="summaryHolder">
+  <div class="summary clearFix has-text-wrap">
+    <p>  Represents a read-only sequence of elements. Exposes the enumerator,
+  which supports a simple iteration over a collection of a specified
+  type.</p>
+  </div>
+</div>
+
+
+<div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+<pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">type IEnumerable&lt;T&gt; = interface(IInterface)</code></pre>
+
+<h4 class="propertyInfoTitle stack">Type Parameters</h4>
+<div class="propertyInfo">
+  <dl class="parameterList">
+    <dt>T</dt>
+    <dd></dd>
+  </dl>
+  <p>  The type of elements to enumerate.</p>
+</div>
+
+
+
+
+
+<dl class="attributeList stack">
+  <dt>Inheritance</dt>
+  <dd>
+    <div class="pdlHolder">
+      <div class="pdl">
+        IInterface
+      </div>
+      <span>IEnumerable&lt;T&gt;</span>
+    </div>
+  </dd>
+</dl>
+
+<dl id="derived" class="attributeList stack">
+  <dt>Derived</dt>
+  <dd>
+    <div>
+      <span class="break-text">
+        <a href="ideque-1.html" data-linktype="relative-path">IDeque&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="ipartition-1.html" data-linktype="relative-path">IPartition&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="iqueue-1.html" data-linktype="relative-path">IQueue&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="ireadonlycollection-1.html" data-linktype="relative-path">IReadOnlyCollection&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="istack-1.html" data-linktype="relative-path">IStack&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tanonymousiterator-1.html" data-linktype="relative-path">TAnonymousIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.lists/tanonymousreadonlylist-1.html" data-linktype="relative-path">TAnonymousReadOnlyList&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.base/tarrayiterator-1.html" data-linktype="relative-path">TArrayIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tbididictionary-2.html" data-linktype="relative-path">TBidiDictionary&lt;TKey,TValue&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tboundeddeque-1.html" data-linktype="relative-path">TBoundedDeque&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tboundedqueue-1.html" data-linktype="relative-path">TBoundedQueue&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.stacks/tboundedstack-1.html" data-linktype="relative-path">TBoundedStack&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tcastiterator-2.html" data-linktype="relative-path">TCastIterator&lt;T,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tchunkiterator-1.html" data-linktype="relative-path">TChunkIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.lists/tcollectionlist-1.html" data-linktype="relative-path">TCollectionList&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multimaps/tcollectionwrapper-1.html" data-linktype="relative-path">TCollectionWrapper&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tdeque-1.html" data-linktype="relative-path">TDeque&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tdictionary-2.html" data-linktype="relative-path">TDictionary&lt;TKey,TValue&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        TDroppedFilesEnumerable
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/temptyenumerable-1.html" data-linktype="relative-path">TEmptyEnumerable&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.base/tenumerableextension-1.html" data-linktype="relative-path">TEnumerableExtension&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tevictingdeque-1.html" data-linktype="relative-path">TEvictingDeque&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tevictingqueue-1.html" data-linktype="relative-path">TEvictingQueue&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        TFileEnumerable
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        TFileListEnumerable
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tgroupjoiniterator-4.html" data-linktype="relative-path">TGroupJoinIterator&lt;TOuter,TInner,TKey,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tgroupedenumerable-4.html" data-linktype="relative-path">TGroupedEnumerable&lt;TSource,TKey,TElement,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tgroupedenumerable-3.html" data-linktype="relative-path">TGroupedEnumerable&lt;TSource,TKey,TElement&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.base/thashmapinnercollection-1.html" data-linktype="relative-path">THashMapInnerCollection&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multisets/thashmultiset-1.html" data-linktype="relative-path">THashMultiSet&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.sets/thashset-1.html" data-linktype="relative-path">THashSet&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tbididictionary-2.tinverse.html" data-linktype="relative-path">TInverse</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tjoiniterator-4.html" data-linktype="relative-path">TJoinIterator&lt;TOuter,TInner,TKey,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tbididictionary-2.tkeycollection.html" data-linktype="relative-path">TKeyCollection</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.linkedlists/tlinkedlist-1.html" data-linktype="relative-path">TLinkedList&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.lists/tlist-1.html" data-linktype="relative-path">TList&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tlookup-2.html" data-linktype="relative-path">TLookup&lt;TKey,TElement&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multimaps/tmultimap-2.html" data-linktype="relative-path">TMultiMap&lt;TKey,TValue&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/toftypeiterator-2.html" data-linktype="relative-path">TOfTypeIterator&lt;T,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/torderedenumerable-1.html" data-linktype="relative-path">TOrderedEnumerable&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.queues/tqueue-1.html" data-linktype="relative-path">TQueue&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/trangeiterator.html" data-linktype="relative-path">TRangeIterator</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/trepeatiterator-1.html" data-linktype="relative-path">TRepeatIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.reflection/trttitypeiterator-1.html" data-linktype="relative-path">TRttiTypeIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectindexiterator-2.html" data-linktype="relative-path">TSelectIndexIterator&lt;TSource,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectiterator-2.html" data-linktype="relative-path">TSelectIterator&lt;TSource,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectmanyindexiterator-3.html" data-linktype="relative-path">TSelectManyIndexIterator&lt;TSource,TCollection,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectmanyindexiterator-2.html" data-linktype="relative-path">TSelectManyIndexIterator&lt;TSource,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectmanyiterator-3.html" data-linktype="relative-path">TSelectManyIterator&lt;TSource,TCollection,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tselectmanyiterator-2.html" data-linktype="relative-path">TSelectManyIterator&lt;TSource,TResult&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tsorteddictionary-2.html" data-linktype="relative-path">TSortedDictionary&lt;TKey,TValue&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.lists/tsortedlist-1.html" data-linktype="relative-path">TSortedList&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multimaps/tsortedmultimap-2.html" data-linktype="relative-path">TSortedMultiMap&lt;TKey,TValue&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.sets/tsortedset-1.html" data-linktype="relative-path">TSortedSet&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.base/tsourceiterator-1.html" data-linktype="relative-path">TSourceIterator&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.stacks/tstack-1.html" data-linktype="relative-path">TStack&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tstringsadapter.html" data-linktype="relative-path">TStringsAdapter</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.base/ttreemapinnercollection-1.html" data-linktype="relative-path">TTreeMapInnerCollection&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multisets/ttreemultiset-1.html" data-linktype="relative-path">TTreeMultiSet&lt;T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.dictionaries/tbididictionary-2.tvaluecollection.html" data-linktype="relative-path">TValueCollection</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multimaps/tvaluelist-2.html" data-linktype="relative-path">TValueList&lt;TKey,T&gt;</a>
+      </span>
+    </div>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.extensions/tzipiterator-3.html" data-linktype="relative-path">TZipIterator&lt;TFirst,TSecond,TResult&gt;</a>
+      </span>
+    </div>
+  </dd>
+</dl>
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#properties" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="properties">Properties</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.comparer.html" class="cref">Comparer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Gets the assigned comparer. If no comparer was assigned it returns
+  the default comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.count.html" class="cref">Count</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the number of elements in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.elementtype.html" class="cref">ElementType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Gets the type of the elements in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.isempty.html" class="cref">IsEmpty</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequence contains no elements.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#methods" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="methods">Methods</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.aggregate.html" class="cref">Aggregate(Func&lt;T,T,T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Applies an accumulator function over the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.all.html" class="cref">All(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether all elements of the sequence satisfy a condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.any.html" class="cref">Any</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequence contains any elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.any.html#M-spring.collections.ienumerable1.any-predicate&lt;t&gt;-" class="cref">Any(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether any element of the sequence satisfies a condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.asobject.html" class="cref">AsObject</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the reference to this instance.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.atleast.html" class="cref">AtLeast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether or not the number of elements in the sequence is
+  greater than or equal to the given count.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.atmost.html" class="cref">AtMost(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether or not the number of elements in the sequence is
+  lesser than or equal to the given count.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html" class="cref">Average</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html#M-spring.collections.ienumerable1.average-func&lt;t- currency&gt;-" class="cref">Average(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of a sequence of Currency values that are
+  obtained by invoking a transform function on each element of the
+  input sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html#M-spring.collections.ienumerable1.average-func&lt;t- double&gt;-" class="cref">Average(Func&lt;T,Double&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of a sequence of Double values that are
+  obtained by invoking a transform function on each element of the
+  input sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html#M-spring.collections.ienumerable1.average-func&lt;t- int64&gt;-" class="cref">Average(Func&lt;T,Int64&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of a sequence of Int64 values that are
+  obtained by invoking a transform function on each element of the
+  input sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html#M-spring.collections.ienumerable1.average-func&lt;t- integer&gt;-" class="cref">Average(Func&lt;T,Integer&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of a sequence of Integer values that are
+  obtained by invoking a transform function on each element of the
+  input sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.average.html#M-spring.collections.ienumerable1.average-func&lt;t- single&gt;-" class="cref">Average(Func&lt;T,Single&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the average of a sequence of Single values that are
+  obtained by invoking a transform function on each element of the
+  input sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.between.html" class="cref">Between(Integer, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether or not the number of elements in the sequence is
+  between an inclusive range of minimum and maximum integers.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.concat.html" class="cref">Concat(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Concatenates two sequences.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.contains.html#M-spring.collections.ienumerable1.contains-t-" class="cref">Contains(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequence contains a specified element by using
+  the default equality comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.contains.html#M-spring.collections.ienumerable1.contains-t-iequalitycomparer&lt;t&gt;-" class="cref">Contains(T, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequence contains a specified element by using
+  a specified equality comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.contains.html#M-spring.collections.ienumerable1.contains-t-tequalitycomparison&lt;t&gt;-" class="cref">Contains(T, TEqualityComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequence contains a specified element by using
+  a specified equality comparison.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.defaultifempty.html" class="cref">DefaultIfEmpty</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the elements of the sequence or the default value in a
+  sequence if the sequence is empty.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.defaultifempty.html#M-spring.collections.ienumerable1.defaultifempty-t-" class="cref">DefaultIfEmpty(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the elements of the sequence or the specified default value
+  in sequence if the sequence is empty.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.distinct.html" class="cref">Distinct</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns distinct elements from a sequence by using the default
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.distinct.html#M-spring.collections.ienumerable1.distinct-iequalitycomparer&lt;t&gt;-" class="cref">Distinct(IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns distinct elements from the sequence by using a specified
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.elementat.html" class="cref">ElementAt(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the element at a specified index in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.elementatordefault.html#M-spring.collections.ienumerable1.elementatordefault-integer-" class="cref">ElementAtOrDefault(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the element at a specified index in the sequence or a default
+  value if the index is out of range.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.elementatordefault.html#M-spring.collections.ienumerable1.elementatordefault-integer-t-" class="cref">ElementAtOrDefault(Integer, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the element at a specified index in the sequence or the
+  specified default value if the index is out of range.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.equalsto.html#M-spring.collections.ienumerable1.equalsto-ienumerable&lt;t&gt;-" class="cref">EqualsTo(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether two sequences are equal by comparing the elements
+  by using the default equality comparer for their type.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.equalsto.html#M-spring.collections.ienumerable1.equalsto-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">EqualsTo(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether two sequences are equal by comparing their
+  elements by using a specified equality comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.equalsto.html#M-spring.collections.ienumerable1.equalsto-array of t-" class="cref">EqualsTo(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether the sequences is equal to the specified array by
+  comparing the elements by using the default equality comparer for
+  their type.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.exactly.html" class="cref">Exactly(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether or not the number of elements in the sequence is
+  equals to the given count.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.exclude.html#M-spring.collections.ienumerable1.exclude-ienumerable&lt;t&gt;-" class="cref">Exclude(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set difference of two sequences by using the default
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.exclude.html#M-spring.collections.ienumerable1.exclude-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Exclude(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set difference of two sequences by using the specified
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.first.html" class="cref">First</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.first.html#M-spring.collections.ienumerable1.first-predicate&lt;t&gt;-" class="cref">First(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element in the sequence that satisfies a specified
+  condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.firstordefault.html" class="cref">FirstOrDefault</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element of the sequence, or a default value if the
+  sequence contains no elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.firstordefault.html#M-spring.collections.ienumerable1.firstordefault-predicate&lt;t&gt;-" class="cref">FirstOrDefault(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element of the sequence that satisfies the
+  specified condition or a default value if no such element is found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.firstordefault.html#M-spring.collections.ienumerable1.firstordefault-predicate&lt;t&gt;-t-" class="cref">FirstOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element of the sequence that satisfies the
+  specified condition or the specified default value if no such element
+  is found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.firstordefault.html#M-spring.collections.ienumerable1.firstordefault-t-" class="cref">FirstOrDefault(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the first element of the sequence, or the specified default
+  value if the sequence contains no elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.foreach.html" class="cref">ForEach(Action&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Performs the specified action on each element of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getcomparer.html" class="cref">GetComparer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the specified comparer for this instance.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getcount.html" class="cref">GetCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getelementtype.html" class="cref">GetElementType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getenumerator.html" class="cref">GetEnumerator</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns an enumerator that iterates through the collection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getisempty.html" class="cref">GetIsEmpty</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.getnonenumeratedcount.html" class="cref">GetNonEnumeratedCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to determine the number of elements in the sequence without
+  forcing an enumeration.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.intersect.html#M-spring.collections.ienumerable1.intersect-ienumerable&lt;t&gt;-" class="cref">Intersect(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set intersection of two sequences by using the default
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.intersect.html#M-spring.collections.ienumerable1.intersect-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Intersect(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set intersection of two sequences by using the specified
+  equality comparer to compare values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.last.html" class="cref">Last</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.last.html#M-spring.collections.ienumerable1.last-predicate&lt;t&gt;-" class="cref">Last(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence that satisfies the specified
+  condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.lastordefault.html" class="cref">LastOrDefault</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence, or a default value if the
+  sequence contains no elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.lastordefault.html#M-spring.collections.ienumerable1.lastordefault-predicate&lt;t&gt;-" class="cref">LastOrDefault(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence that satisfies the specified
+  condition or a default value if no such element is found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.lastordefault.html#M-spring.collections.ienumerable1.lastordefault-predicate&lt;t&gt;-t-" class="cref">LastOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence that satisfies the specified
+  condition or the specified default value if no such element is found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.lastordefault.html#M-spring.collections.ienumerable1.lastordefault-t-" class="cref">LastOrDefault(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last element of the sequence, or the specified default
+  value if the sequence contains no elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html" class="cref">Max</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the maximum value in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-func&lt;t- currency&gt;-" class="cref">Max(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the maximum Currency value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-func&lt;t- double&gt;-" class="cref">Max(Func&lt;T,Double&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the maximum Double value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-func&lt;t- int64&gt;-" class="cref">Max(Func&lt;T,Int64&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the maximum Int64 value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-func&lt;t- integer&gt;-" class="cref">Max(Func&lt;T,Integer&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the maximum Integer value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-func&lt;t- single&gt;-" class="cref">Max(Func&lt;T,Single&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the maximum Single value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-icomparer&lt;t&gt;-" class="cref">Max(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the maximum value in the sequence by using the specified
+  comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.max.html#M-spring.collections.ienumerable1.max-tcomparison&lt;t&gt;-" class="cref">Max(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the maximum value in the sequence by using the specified
+  comparison.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.memoize.html" class="cref">Memoize</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns a sequence that lazily caches the sequence as it is iterated
+  for the first time, reusing the cache thereafter for future
+  re-iterations. If the sequence is already cached or buffered then it
+  is returned verbatim.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html" class="cref">Min</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the minimum value in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-func&lt;t- currency&gt;-" class="cref">Min(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the minimum Currency value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-func&lt;t- double&gt;-" class="cref">Min(Func&lt;T,Double&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the minimum Double value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-func&lt;t- int64&gt;-" class="cref">Min(Func&lt;T,Int64&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the minimum Int64 value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-func&lt;t- integer&gt;-" class="cref">Min(Func&lt;T,Integer&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the minimum Integer value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-func&lt;t- single&gt;-" class="cref">Min(Func&lt;T,Single&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Invokes a transform function on each element of the sequence and
+  returns the minimum Single value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-icomparer&lt;t&gt;-" class="cref">Min(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the minimum value in the sequence by using the specified
+  comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.min.html#M-spring.collections.ienumerable1.min-tcomparison&lt;t&gt;-" class="cref">Min(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the minimum value in the sequence by using the specified
+  comparison.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.ordered.html" class="cref">Ordered</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Sorts the elements of the sequence in ascending order using the
+  default comparer for their type.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.ordered.html#M-spring.collections.ienumerable1.ordered-icomparer&lt;t&gt;-" class="cref">Ordered(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Sorts the elements of the sequence in ascending order using the
+  specified comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.ordered.html#M-spring.collections.ienumerable1.ordered-tcomparison&lt;t&gt;-" class="cref">Ordered(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Sorts the elements of the sequence in ascending order using the
+  specified comparison.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.reversed.html" class="cref">Reversed</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Inverts the order of the elements in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.shuffled.html" class="cref">Shuffled</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns a sequence of elements in random order from the original.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.single.html" class="cref">Single</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence, and raises an exception if
+  there is not exactly one element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.single.html#M-spring.collections.ienumerable1.single-predicate&lt;t&gt;-" class="cref">Single(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence that satisfies a specified
+  condition, and raises an exception if more than one such element
+  exists.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.singleordefault.html" class="cref">SingleOrDefault</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence, or a default value if the
+  sequence is empty; this method raises an exception if there is more
+  than one element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.singleordefault.html#M-spring.collections.ienumerable1.singleordefault-predicate&lt;t&gt;-" class="cref">SingleOrDefault(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence that satisfies a specified
+  condition or a default value if no such element exists; this method
+  raises an exception if more than one element satisfies the condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.singleordefault.html#M-spring.collections.ienumerable1.singleordefault-predicate&lt;t&gt;-t-" class="cref">SingleOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence that satisfies a specified
+  condition, or a specified default value if no such element exists;
+  this method raises an exception if more than one element satisfies
+  the condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.singleordefault.html#M-spring.collections.ienumerable1.singleordefault-t-" class="cref">SingleOrDefault(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the only element of the sequence, or a specified default
+  value if the sequence is empty; this method raises an exception if
+  there is more than one element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.skip.html" class="cref">Skip(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Bypasses a specified number of elements in the sequence and then
+  returns the remaining elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.skiplast.html" class="cref">SkipLast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Omits the specified number of elements at the end of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.skipwhile.html#M-spring.collections.ienumerable1.skipwhile-func&lt;t- integer- boolean&gt;-" class="cref">SkipWhile(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Bypasses elements in the sequence as long as a specified condition is
+  true and then returns the remaining elements. The element&#x27;s index is
+  used in the logic of the predicate function.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.skipwhile.html#M-spring.collections.ienumerable1.skipwhile-predicate&lt;t&gt;-" class="cref">SkipWhile(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Bypasses elements in the sequence as long as a specified condition is
+  true and then returns the remaining elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html" class="cref">Sum</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html#M-spring.collections.ienumerable1.sum-func&lt;t- currency&gt;-" class="cref">Sum(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence of Currency values that are obtained
+  by invoking a transform function on each element of the input
+  sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html#M-spring.collections.ienumerable1.sum-func&lt;t- double&gt;-" class="cref">Sum(Func&lt;T,Double&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence of Double values that are obtained
+  by invoking a transform function on each element of the input
+  sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html#M-spring.collections.ienumerable1.sum-func&lt;t- int64&gt;-" class="cref">Sum(Func&lt;T,Int64&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence of Int64 values that are obtained
+  by invoking a transform function on each element of the input
+  sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html#M-spring.collections.ienumerable1.sum-func&lt;t- integer&gt;-" class="cref">Sum(Func&lt;T,Integer&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence of Single values that are obtained
+  by invoking a transform function on each element of the input
+  sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.sum.html#M-spring.collections.ienumerable1.sum-func&lt;t- single&gt;-" class="cref">Sum(Func&lt;T,Single&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Computes the sum of the sequence of Single values that are obtained
+  by invoking a transform function on each element of the input
+  sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.take.html" class="cref">Take(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the specified number of contiguous elements from the start of
+  the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.takelast.html" class="cref">TakeLast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the specified number of contiguous elements from the end of
+  the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.takewhile.html#M-spring.collections.ienumerable1.takewhile-func&lt;t- integer- boolean&gt;-" class="cref">TakeWhile(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns elements from the sequence as long as a specified condition
+  is true. The element&#x27;s index is used in the logic of the predicate
+  function.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.takewhile.html#M-spring.collections.ienumerable1.takewhile-predicate&lt;t&gt;-" class="cref">TakeWhile(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns elements from the sequence as long as a specified condition
+  is true.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.toarray.html" class="cref">ToArray</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Creates a new array which is filled with the elements in the
+  collection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetelementat.html" class="cref">TryGetElementAt(T, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the element at a specified index in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetfirst.html#M-spring.collections.ienumerable1.trygetfirst-t-" class="cref">TryGetFirst(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the first element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetfirst.html#M-spring.collections.ienumerable1.trygetfirst-t-predicate&lt;t&gt;-" class="cref">TryGetFirst(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the first element in the sequence that satisfies a
+  specified condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetlast.html#M-spring.collections.ienumerable1.trygetlast-t-" class="cref">TryGetLast(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the last element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetlast.html#M-spring.collections.ienumerable1.trygetlast-t-predicate&lt;t&gt;-" class="cref">TryGetLast(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the last element in the sequence that satisfies a
+  specified condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetsingle.html#M-spring.collections.ienumerable1.trygetsingle-t-" class="cref">TryGetSingle(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the only element in the sequence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.trygetsingle.html#M-spring.collections.ienumerable1.trygetsingle-t-predicate&lt;t&gt;-" class="cref">TryGetSingle(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Attempts to get the only element in the sequence that satisfies a
+  specified condition.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.union.html#M-spring.collections.ienumerable1.union-ienumerable&lt;t&gt;-" class="cref">Union(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set union of two sequences by using the default equality
+  comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.union.html#M-spring.collections.ienumerable1.union-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Union(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Produces the set union of two sequences by using a specified equality
+  comparer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.where.html#M-spring.collections.ienumerable1.where-func&lt;t- integer- boolean&gt;-" class="cref">Where(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Filters the sequence based on the specified predicate. Each element&#x27;s
+  index is used in the logic of the predicate function.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.where.html#M-spring.collections.ienumerable1.where-predicate&lt;t&gt;-" class="cref">Where(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Filters the sequence based on the specified predicate.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#definition" class="font-weight-semibold color-text">Definition</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#properties" class="color-text-subtle">Properties</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#methods" class="color-text-subtle">Methods</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

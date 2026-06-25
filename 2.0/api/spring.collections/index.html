@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spring.Collections Unit | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.base" />
+  <meta name="uid" content="spring4d.api/spring.collections" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-base.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.base/index.html" class="cref">Spring.Base</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              Spring.Collections
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="index.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  Spring.Collections Unit</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#classes">Classes</a>
+  </li>
+  <li>
+    <a href="#records">Records</a>
+  </li>
+  <li>
+    <a href="#interfaces">Interfaces</a>
+  </li>
+  <li>
+    <a href="#enumerations">Enumerations</a>
+  </li>
+  <li>
+    <a href="#delegates">Delegates</a>
+  </li>
+  <li>
+    <a href="#types">Types</a>
+  </li>
+  <li>
+    <a href="#helpers">Helpers</a>
+  </li>
+  <li>
+    <a href="#constants">Constants</a>
+  </li>
+  <li>
+    <a href="#routines">Routines</a>
+  </li>
+</ol>
+        </nav>
+
+        
+<div class="metadata margin-top-md">
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Base
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+<div class="summaryHolder">
+  <div class="summary clearFix has-text-wrap">
+    <p>  The Spring.Collections namespaces introduce the Collections Framework in
+  spring4d.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#classes" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="classes">Classes</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="autoinitattribute.html" class="cref">AutoInitAttribute</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.html" class="cref">TCollections</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides static methods to create an instance of various interfaced
+  generic collections such as <a href="ilist-1.html">  IList&lt;T&gt;</a>   or <a href="idictionary-2.html">  IDictionary&lt;TKey,TValue&gt;</a>  
+   .</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tenumerable.html" class="cref">TEnumerable</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tlinkedlistnode-1.html" class="cref">TLinkedListNode&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a node in a <a href="ilinkedlist-1.html">  ILinkedList&lt;T&gt;</a>  
+   . This class cannot be inherited.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#records" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="records">Records</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tidentityfunction-1.html" class="cref">TIdentityFunction&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tmultisetentry-1.html" class="cref">TMultiSetEntry&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tpair-2.html" class="cref">TPair&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tstringcomparer.html" class="cref">TStringComparer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#interfaces" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="interfaces">Interfaces</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iarrayaccess-1.html" class="cref">IArrayAccess&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides direct access to an array that is used for internal storage.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ibididictionary-2.html" class="cref">IBidiDictionary&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="icollection.html" class="cref">ICollection</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Non generic interface for adding items to a collection - this can be
+  used for serialization.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="icollection-1.html" class="cref">ICollection&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic collection of elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="icollectionchangedevent-1.html" class="cref">ICollectionChangedEvent&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ideque-1.html" class="cref">IDeque&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a double-ended queue.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="idictionary-2.html" class="cref">IDictionary&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic collection of key&#x2f;value pairs.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable.html" class="cref">IEnumerable</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerable-1.html" class="cref">IEnumerable&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a read-only sequence of elements. Exposes the enumerator,
+  which supports a simple iteration over a collection of a specified
+  type.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerator.html" class="cref">IEnumerator</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ienumerator-1.html" class="cref">IEnumerator&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Supports a simple iteration over a generic collection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="igrouping-2.html" class="cref">IGrouping&lt;TKey,TElement&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a collection of elements that have a common key.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iinterfacelist.html" class="cref">IInterfaceList</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ilinkedlist-1.html" class="cref">ILinkedList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a doubly linked list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ilist-1.html" class="cref">IList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a collection of elements that can be individually accessed
+  by index.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ilookup-2.html" class="cref">ILookup&lt;TKey,TElement&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Defines an indexer, size property, and Boolean search method for data
+  structures that map keys to <a href="ienumerable-1.html">  IEnumerable&lt;T&gt;</a>  
+  sequences of values.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="imap-2.html" class="cref">IMap&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic collection of key&#x2f;value pairs.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="imultimap-2.html" class="cref">IMultiMap&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="imultiset-1.html" class="cref">IMultiSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="inotifycollectionchanged-1.html" class="cref">INotifyCollectionChanged&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iobjectlist.html" class="cref">IObjectList</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iordereddictionary-2.html" class="cref">IOrderedDictionary&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic dictionary that preserves insertion order.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iorderedset-1.html" class="cref">IOrderedSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic set that preserves insertion order.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ipartition-1.html" class="cref">IPartition&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a sub range of a collection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iqueue-1.html" class="cref">IQueue&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a first-in, first-out collection of elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlycollection-1.html" class="cref">IReadOnlyCollection&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic read-only collection of elements.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlydictionary-2.html" class="cref">IReadOnlyDictionary&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic read-only collection of key&#x2f;value pairs.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlylist-1.html" class="cref">IReadOnlyList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a read-only collection of elements that can be accessed by
+  index.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlymap-2.html" class="cref">IReadOnlyMap&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic read-only collection of key&#x2f;value pairs.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlymultimap-2.html" class="cref">IReadOnlyMultiMap&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlymultiset-1.html" class="cref">IReadOnlyMultiSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ireadonlyordereddictionary-2.html" class="cref">IReadOnlyOrderedDictionary&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a generic read-only collection of key&#x2f;value pairs that
+  preserves insertion order.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="iset-1.html" class="cref">ISet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides the base interface for the abstraction of sets.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="istack-1.html" class="cref">IStack&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a variable size last-in-first-out (LIFO) collection of
+  instances of the same arbitrary type.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#enumerations" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="enumerations">Enumerations</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollectionchangedaction.html" class="cref">TCollectionChangedAction</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#delegates" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="delegates">Delegates</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollectionchangedevent-1.html" class="cref">TCollectionChangedEvent&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#types" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="types">Types</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tdictionaryownerships.html" class="cref">TDictionaryOwnerships</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#helpers" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="helpers">Helpers</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollectionhelper.html" class="cref">TCollectionHelper</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#constants" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="constants">Constants</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="caadded.html" class="cref">caAdded</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="cachanged.html" class="cref">caChanged</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="caextracted.html" class="cref">caExtracted</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="camoved.html" class="cref">caMoved</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="caremoved.html" class="cref">caRemoved</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="careplaced.html" class="cref">caReplaced</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="careset.html" class="cref">caReset</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="careseted.html" class="cref">caReseted</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="doownskeys.html" class="cref">doOwnsKeys</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="doownsvalues.html" class="cref">doOwnsValues</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#routines" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="routines">Routines</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="getelementtype.html" class="cref">GetElementType(PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#classes" class="font-weight-semibold color-text">Classes</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#records" class="color-text-subtle">Records</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#interfaces" class="color-text-subtle">Interfaces</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#enumerations" class="color-text-subtle">Enumerations</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#delegates" class="color-text-subtle">Delegates</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#types" class="color-text-subtle">Types</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#helpers" class="color-text-subtle">Helpers</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#constants" class="color-text-subtle">Constants</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#routines" class="color-text-subtle">Routines</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

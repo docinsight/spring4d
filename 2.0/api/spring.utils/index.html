@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spring.Utils Unit | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.extensions" />
+  <meta name="uid" content="spring4d.api/spring.utils" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-extensions.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.extensions/index.html" class="cref">Spring.Extensions</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              Spring.Utils
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="index.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  Spring.Utils Unit</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#classes">Classes</a>
+  </li>
+  <li>
+    <a href="#records">Records</a>
+  </li>
+  <li>
+    <a href="#enumerations">Enumerations</a>
+  </li>
+  <li>
+    <a href="#types">Types</a>
+  </li>
+  <li>
+    <a href="#constants">Constants</a>
+  </li>
+  <li>
+    <a href="#routines">Routines</a>
+  </li>
+</ol>
+        </nav>
+
+        
+<div class="metadata margin-top-md">
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Extensions
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+<div class="summaryHolder">
+  <div class="summary clearFix has-text-wrap">
+    <p>  This namespace provides many well-encapsulated utility classes and
+  routines about the environment and system.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#classes" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="classes">Classes</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="edrivenotfoundexception.html" class="cref">EDriveNotFoundException</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcallback.html" class="cref">TCallback</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Adapts class instance (object) method as standard callback function.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tenum.html" class="cref">TEnum</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tinterfacedthread.html" class="cref">TInterfacedThread</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides an abstract class base of TThread that implements the
+  IInterface.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="toperatingsystem.html" class="cref">TOperatingSystem</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents information about the operating system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tstringmatchers.html" class="cref">TStringMatchers</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides static methods to create various string predicates.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#records" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="records">Records</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="environment.html" class="cref">Environment</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a type alias of TEnvironment class.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tenvironment.html" class="cref">TEnvironment</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides information about, and means to manipulate, the current
+  environment.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tfileversioninfo.html" class="cref">TFileVersionInfo</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Provides version information for a physical file on disk.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tversion.html" class="cref">TVersion</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents a version number in the format of
+  &quot;major.minor[.build[.revision]]&quot;, which is different from the delphi
+  style format &quot;major.minor[.release[.build]]&quot;.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#enumerations" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="enumerations">Enumerations</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tenvironmentvariabletarget.html" class="cref">TEnvironmentVariableTarget</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Specifies the location where an environment variable is stored or
+  retrieved in a set or get operation.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tosplatformtype.html" class="cref">TOSPlatformType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tosproducttype.html" class="cref">TOSProductType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tossuitetype.html" class="cref">TOSSuiteType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tosversiontype.html" class="cref">TOSVersionType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tprocessorarchitecture.html" class="cref">TProcessorArchitecture</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Identifies the processor and bits-per-word of the platform targeted by
+  an executable.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tspecialfolder.html" class="cref">TSpecialFolder</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Specifies enumerated constants used to retrieve directory paths to
+  system special folders.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#types" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="types">Types</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="edirectorynotfoundexception.html" class="cref">EDirectoryNotFoundException</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="efilenotfoundexception.html" class="cref">EFileNotFoundException</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="eioexception.html" class="cref">EIOException</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcallbackfunc.html" class="cref">TCallbackFunc</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Defines an anonymous function which returns a callback pointer.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#constants" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="constants">Constants</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="conegb.html" class="cref">COneGB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one GB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="conekb.html" class="cref">COneKB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one KB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="conemb.html" class="cref">COneMB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one MB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="conetb.html" class="cref">COneTB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one TB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="onegb.html" class="cref">OneGB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one GB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="onekb.html" class="cref">OneKB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one KB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="onemb.html" class="cref">OneMB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one MB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="onetb.html" class="cref">OneTB</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents bytes of one TB.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="specialfoldercsidls.html" class="cref">SpecialFolderCSIDLs</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etadvancedserver.html" class="cref">etAdvancedServer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etdatacenterserver.html" class="cref">etDatacenterServer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etenterprise.html" class="cref">etEnterprise</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etpersonal.html" class="cref">etPersonal</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etprofessional.html" class="cref">etProfessional</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etserver.html" class="cref">etServer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etunknown.html" class="cref">etUnknown</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etwebedition.html" class="cref">etWebEdition</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="etworkstation.html" class="cref">etWorkStation</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="evtmachine.html" class="cref">evtMachine</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  The environment variable is stored or retrieved from the
+  HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session
+  Manager\Environment key in the Windows operating system registry.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="evtprocess.html" class="cref">evtProcess</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  The environment variable is stored or retrieved from the environment
+  block associated with the current process.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="evtuser.html" class="cref">evtUser</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  The environment variable is stored or retrieved from the
+  HKEY_CURRENT_USER\Environment key in the Windows operating system
+  registry.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="paamd64.html" class="cref">paAmd64</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  64-bit AMD microprocessors.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="paia64.html" class="cref">paIA64</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  64-bit Intel and compatible microprocessors.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="paunknown.html" class="cref">paUnknown</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Unknown processor</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="pax86.html" class="cref">paX86</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Intel x86 and compatible microprocessors.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptdomaincontroller.html" class="cref">ptDomainController</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptinvalid.html" class="cref">ptInvalid</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptserver.html" class="cref">ptServer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptunknown.html" class="cref">ptUnknown</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptwin3x.html" class="cref">ptWin3x</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptwin9x.html" class="cref">ptWin9x</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptwinnt.html" class="cref">ptWinNT</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="ptworkstation.html" class="cref">ptWorkstation</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfaltstartup.html" class="cref">sfALTStartup</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfadmintools.html" class="cref">sfAdminTools</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfappdata.html" class="cref">sfAppData</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfbitbucket.html" class="cref">sfBitBucket</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcdburnarea.html" class="cref">sfCDBurnArea</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonaltstartup.html" class="cref">sfCommonALTStartup</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonadmintools.html" class="cref">sfCommonAdminTools</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonappdata.html" class="cref">sfCommonAppData</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommondesktopdirectory.html" class="cref">sfCommonDesktopDirectory</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommondocuments.html" class="cref">sfCommonDocuments</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonfavorites.html" class="cref">sfCommonFavorites</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonmusic.html" class="cref">sfCommonMusic</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonoemlinks.html" class="cref">sfCommonOEMLinks</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonpictures.html" class="cref">sfCommonPictures</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonprograms.html" class="cref">sfCommonPrograms</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonstartmenu.html" class="cref">sfCommonStartMenu</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonstartup.html" class="cref">sfCommonStartup</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommontemplates.html" class="cref">sfCommonTemplates</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcommonvideo.html" class="cref">sfCommonVideo</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcomputersnearme.html" class="cref">sfComputersNearMe</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfconnections.html" class="cref">sfConnections</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcontrols.html" class="cref">sfControls</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfcookies.html" class="cref">sfCookies</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfdesktop.html" class="cref">sfDesktop</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfdesktopdirectory.html" class="cref">sfDesktopDirectory</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfdrives.html" class="cref">sfDrives</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sffavorites.html" class="cref">sfFavorites</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sffonts.html" class="cref">sfFonts</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfhistory.html" class="cref">sfHistory</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfinternet.html" class="cref">sfInternet</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfinternetcache.html" class="cref">sfInternetCache</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sflocalappdata.html" class="cref">sfLocalAppData</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfmydocuments.html" class="cref">sfMyDocuments</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfmymusic.html" class="cref">sfMyMusic</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfmypictures.html" class="cref">sfMyPictures</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfmyvideo.html" class="cref">sfMyVideo</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfnethood.html" class="cref">sfNethood</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfnetwork.html" class="cref">sfNetwork</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfpersonal.html" class="cref">sfPersonal</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprinters.html" class="cref">sfPrinters</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprinthood.html" class="cref">sfPrinthood</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprofile.html" class="cref">sfProfile</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprogramfiles.html" class="cref">sfProgramFiles</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprogramfilescommon.html" class="cref">sfProgramFilesCommon</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprogramfilescommonx86.html" class="cref">sfProgramFilesCommonX86</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprogramfilesx86.html" class="cref">sfProgramFilesX86</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfprograms.html" class="cref">sfPrograms</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfrecent.html" class="cref">sfRecent</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfresources.html" class="cref">sfResources</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfresourceslocalized.html" class="cref">sfResourcesLocalized</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfsendto.html" class="cref">sfSendTo</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfstartmenu.html" class="cref">sfStartMenu</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfstartup.html" class="cref">sfStartup</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfsystem.html" class="cref">sfSystem</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfsystemx86.html" class="cref">sfSystemX86</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sftemplates.html" class="cref">sfTemplates</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="sfwindows.html" class="cref">sfWindows</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtunknown.html" class="cref">vtUnknown</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwin7.html" class="cref">vtWin7</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwin8.html" class="cref">vtWin8</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwin81.html" class="cref">vtWin81</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwin95.html" class="cref">vtWin95</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwin98.html" class="cref">vtWin98</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinme.html" class="cref">vtWinME</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinnt351.html" class="cref">vtWinNT351</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinnt4.html" class="cref">vtWinNT4</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2000.html" class="cref">vtWinServer2000</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2003.html" class="cref">vtWinServer2003</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2008.html" class="cref">vtWinServer2008</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2008r2.html" class="cref">vtWinServer2008R2</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2012.html" class="cref">vtWinServer2012</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinserver2012r2.html" class="cref">vtWinServer2012R2</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinvista.html" class="cref">vtWinVista</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="vtwinxp.html" class="cref">vtWinXP</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#routines" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="routines">Routines</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="applicationpath.html" class="cref">ApplicationPath</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the path of the application.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="applicationversion.html" class="cref">ApplicationVersion</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the version number of the application.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="applicationversionstring.html" class="cref">ApplicationVersionString</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the version information of the application.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="checkdirectoryexists.html" class="cref">CheckDirectoryExists(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether a specified directory exists. An <a href="edirectorynotfoundexception.html">  EDirectoryNotFoundException</a>  
+   exception will be raised when not found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="checkfileexists.html" class="cref">CheckFileExists(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Determines whether a specified file exists. An <a href="efilenotfoundexception.html">  EFileNotFoundException</a>  
+   exception will be raised when not found.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="convertdatetimetofiletime.html#M-spring.utils.convertdatetimetofiletime-tdatetime-boolean-" class="cref">ConvertDateTimeToFileTime(TDateTime, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Converts a Delphi TDatetime value to a Windows TFiletime value.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="convertfiletimetodatetime.html#M-spring.utils.convertfiletimetodatetime-tfiletime-boolean-" class="cref">ConvertFileTimeToDateTime(TFileTime, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Converts a Windows TFiletime value to a Delphi TDatetime value. Not
+  implemented on Mac as the Delphi POSIX version is time_t based, but
+  only contains a date portion.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="createcallback.html" class="cref">CreateCallback(TObject, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Creates a standard callback function which was adapted from a instance
+  method.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="getlasterrormessage.html" class="cref">GetLastErrorMessage</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the last system error message.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="isaltpressed.html" class="cref">IsAltPressed</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns True if the Alt key is pressed, otherwise false.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="isctrlpressed.html" class="cref">IsCtrlPressed</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns True if the Control key is pressed, otherwise false.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="isshiftpressed.html" class="cref">IsShiftPressed</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns True if the Shift key is pressed, otherwise false.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="lock.html#M-spring.utils.lock-iinterface-tproc-" class="cref">Lock(IInterface, TProc)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="lock.html#M-spring.utils.lock-tobject-tproc-" class="cref">Lock(TObject, TProc)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Obtains a mutual-exclusion lock for the given object, executes a
+  procedure and then releases the lock.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="queue.html" class="cref">Queue(TThreadProcedure)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Asynchronously executes a method call within the main thread.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="synchronize.html" class="cref">Synchronize(TThreadProcedure)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Executes a method call within the main thread.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="trygetpropinfo.html" class="cref">TryGetPropInfo(TObject, string, PPropInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Try getting property information of an object.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="updatestrings.html" class="cref">UpdateStrings(TStrings, TProc)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Updates an instance of   TStrings   by calling its
+  BeginUpdate and EndUpdate.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#classes" class="font-weight-semibold color-text">Classes</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#records" class="color-text-subtle">Records</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#enumerations" class="color-text-subtle">Enumerations</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#types" class="color-text-subtle">Types</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#constants" class="color-text-subtle">Constants</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#routines" class="color-text-subtle">Routines</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRttiTypeIterator&lt;T&gt; Class | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.base" />
+  <meta name="uid" content="spring4d.api/spring.reflection/trttitypeiterator`1" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-base.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.base/index.html" class="cref">Spring.Base</a>
+            </li>
+            <li
+              class="breadcrumbs-item">
+              <a href="index.html" class="cref">Spring.Reflection</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              TRttiTypeIterator&lt;T&gt;
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="trttitypeiterator-1.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  TRttiTypeIterator&lt;T&gt; Class</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#definition">Definition</a>
+  </li>
+  <li>
+    <a href="#properties">Properties</a>
+  </li>
+  <li>
+    <a href="#methods">Methods</a>
+  </li>
+  <li>
+    <a href="#fields">Fields</a>
+  </li>
+</ol>
+        </nav>
+
+        <div class="heading-wrapper" data-heading-level="h2">
+  <a class="anchor-link" href="#definition" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+  <h2 id="definition">Definition</h2>
+</div>
+
+<div class="metadata">
+  <dl class="attributeList">
+    <dt>Unit:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Reflection
+      </span>
+    </dd>
+  </dl>
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Base
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+
+
+<div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+<pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">type TRttiTypeIterator&lt;T&gt; = class(TIterator&lt;T&gt;)</code></pre>
+
+<h4 class="propertyInfoTitle stack">Type Parameters</h4>
+<div class="propertyInfo">
+  <dl class="parameterList">
+    <dt>T</dt>
+    <dd></dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+<dl class="attributeList stack">
+  <dt>Inheritance</dt>
+  <dd>
+    <div class="pdlHolder">
+      <div class="pdl">
+        TObject
+      </div>
+      <div class="pdl">
+        <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>
+      </div>
+      <div class="pdl">
+        <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>
+      </div>
+      <div class="pdl">
+        <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>
+      </div>
+      <div class="pdl">
+        <a href="../spring.collections.base/titerator-1.html" data-linktype="relative-path">TIterator&lt;T&gt;</a>
+      </div>
+      <span>TRttiTypeIterator&lt;T&gt;</span>
+    </div>
+  </dd>
+</dl>
+
+
+<dl class="attributeList stack">
+  <dt>Implements</dt>
+  <dd>
+    <div class="cdlHolder">
+      <span class="cdl">
+        <span class="break-text">
+          <a href="../spring.collections/ienumerable-1.html" data-linktype="relative-path">IEnumerable&lt;T&gt;</a>
+        </span>
+      </span>
+    </div>
+  </dd>
+</dl>
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#properties" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="properties">Properties</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject.refcount.html" class="cref">RefCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#methods" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="methods">Methods</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/titerator-1.afterconstruction.html" class="cref">AfterConstruction</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/titerator-1.html" data-linktype="relative-path">TIterator&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.aggregate.html" class="cref">Aggregate(Func&lt;T,T,T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.all.html" class="cref">All(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.any.html" class="cref">Any</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.any.html#M-spring.collections.base.tenumerablebase1.any-predicate&lt;t&gt;-" class="cref">Any(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject.asobject.html" class="cref">AsObject</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.atleast.html" class="cref">AtLeast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.atmost.html" class="cref">AtMost(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.average.html#M-spring.collections.base.tenumerablebase1.average-func&lt;t- currency&gt;-" class="cref">Average(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.average.html#M-spring.collections.base.tenumerablebase.average-iinterface-tgetcurrentwithselector&lt;currency&gt;-" class="cref">Average(IInterface, TGetCurrentWithSelector&lt;Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject.beforedestruction.html" class="cref">BeforeDestruction</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.between.html" class="cref">Between(Integer, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="trttitypeiterator-1.clone.html" class="cref">Clone</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.concat.html" class="cref">Concat(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.contains.html#M-spring.collections.base.tenumerablebase1.contains-t-tequalitycomparison&lt;t&gt;-" class="cref">Contains(T, TEqualityComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.contains.html#M-spring.collections.base.tenumerablebase.contains-void-pointer-tequalsvalue-" class="cref">Contains(Void, Pointer, TEqualsValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.copyto.html" class="cref">CopyTo(TArray&lt;T&gt;, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.defaultifempty.html#M-spring.collections.base.tenumerablebase1.defaultifempty-t-" class="cref">DefaultIfEmpty(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="trttitypeiterator-1.dispose.html" class="cref">Dispose</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.distinct.html#M-spring.collections.base.tenumerablebase1.distinct-iequalitycomparer&lt;t&gt;-" class="cref">Distinct(IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.elementat.html" class="cref">ElementAt(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.elementatordefault.html#M-spring.collections.base.tenumerablebase1.elementatordefault-integer-t-" class="cref">ElementAtOrDefault(Integer, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.equalsto.html#M-spring.collections.base.tenumerablebase1.equalsto-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">EqualsTo(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.equalsto.html#M-spring.collections.base.tenumerablebase.equalsto-pointer-integer-tequalsarray-" class="cref">EqualsTo(Pointer, Integer, TEqualsArray)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.exactly.html" class="cref">Exactly(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.exclude.html#M-spring.collections.base.tenumerablebase1.exclude-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Exclude(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.extractall.html" class="cref">ExtractAll(IInterface, Void)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.first.html#M-spring.collections.base.tenumerablebase1.first-predicate&lt;t&gt;-" class="cref">First(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.firstordefault.html#M-spring.collections.base.tenumerablebase1.firstordefault-predicate&lt;t&gt;-t-" class="cref">FirstOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.foreach.html#M-spring.collections.base.tenumerablebase1.foreach-action&lt;t&gt;-" class="cref">ForEach(Action&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.foreach.html#M-spring.collections.base.tenumerablebase.foreach-iinterface-tcollectionoperation-" class="cref">ForEach(IInterface, TCollectionOperation)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.getcomparer.html" class="cref">GetComparer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.getcount.html" class="cref">GetCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.getelementtype.html" class="cref">GetElementType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/titerator-1.getenumerator.html" class="cref">GetEnumerator</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/titerator-1.html" data-linktype="relative-path">TIterator&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject.getinterface.html" class="cref">GetInterface(TGuid, Void)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.getisempty.html" class="cref">GetIsEmpty</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.getnonenumeratedcount.html" class="cref">GetNonEnumeratedCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.intersect.html#M-spring.collections.base.tenumerablebase1.intersect-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Intersect(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.last.html#M-spring.collections.base.tenumerablebase1.last-predicate&lt;t&gt;-" class="cref">Last(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.lastordefault.html#M-spring.collections.base.tenumerablebase1.lastordefault-predicate&lt;t&gt;-t-" class="cref">LastOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.max.html#M-spring.collections.base.tenumerablebase1.max-func&lt;t- currency&gt;-" class="cref">Max(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.max.html#M-spring.collections.base.tenumerablebase.max-iinterface-tgetcurrentwithselector&lt;currency&gt;-" class="cref">Max(IInterface, TGetCurrentWithSelector&lt;Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.maxmin.html" class="cref">MaxMin(IInterface, Void, TGetCurrent, TGetCurrentWithSelector)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.memoize.html" class="cref">Memoize</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.min.html#M-spring.collections.base.tenumerablebase1.min-func&lt;t- currency&gt;-" class="cref">Min(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.min.html#M-spring.collections.base.tenumerablebase.min-iinterface-tgetcurrentwithselector&lt;currency&gt;-" class="cref">Min(IInterface, TGetCurrentWithSelector&lt;Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/titerator-1.movenext.html" class="cref">MoveNext</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/titerator-1.html" data-linktype="relative-path">TIterator&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.moveto.html#M-spring.collections.base.tenumerablebase.moveto-iinterface-iinterface-ptypeinfo-" class="cref">MoveTo(IInterface, IInterface, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.newinstance.html" class="cref">NewInstance</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.ordered.html#M-spring.collections.base.tenumerablebase1.ordered-tcomparison&lt;t&gt;-" class="cref">Ordered(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.queryinterface.html" class="cref">QueryInterface(TGuid, Void)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.queryinterface.html#M-spring.collections.base.tenumerablebase.queryinterface-tguid-void-tgetcurrent-taddtocollection-" class="cref">QueryInterface(TGuid, Void, TGetCurrent, TAddToCollection)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.removeall.html" class="cref">RemoveAll(IInterface, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.reversed.html" class="cref">Reversed</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.shuffled.html" class="cref">Shuffled</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.single.html#M-spring.collections.base.tenumerablebase1.single-predicate&lt;t&gt;-" class="cref">Single(Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.singleordefault.html#M-spring.collections.base.tenumerablebase1.singleordefault-predicate&lt;t&gt;-t-" class="cref">SingleOrDefault(Predicate&lt;T&gt;, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.skip.html" class="cref">Skip(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.skiplast.html" class="cref">SkipLast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.skipwhile.html#M-spring.collections.base.tenumerablebase1.skipwhile-func&lt;t- integer- boolean&gt;-" class="cref">SkipWhile(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.skipwhileindex.html" class="cref">SkipWhileIndex(IInterface, Void, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="trttitypeiterator-1.start.html" class="cref">Start</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.sum.html#M-spring.collections.base.tenumerablebase1.sum-func&lt;t- currency&gt;-" class="cref">Sum(Func&lt;T,Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.sum.html#M-spring.collections.base.tenumerablebase.sum-iinterface-tgetcurrentwithselector&lt;currency&gt;-" class="cref">Sum(IInterface, TGetCurrentWithSelector&lt;Currency&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.take.html" class="cref">Take(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.takelast.html" class="cref">TakeLast(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.takewhile.html#M-spring.collections.base.tenumerablebase1.takewhile-func&lt;t- integer- boolean&gt;-" class="cref">TakeWhile(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.takewhileindex.html" class="cref">TakeWhileIndex(IInterface, Void, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.toarray.html" class="cref">ToArray</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.trygetelementat.html" class="cref">TryGetElementAt(T, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.trygetfirst.html#M-spring.collections.base.tenumerablebase1.trygetfirst-t-predicate&lt;t&gt;-" class="cref">TryGetFirst(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.trygetfirst.html#M-spring.collections.base.tenumerablebase.trygetfirst-void-iinterface-tgetcurrentwithpredicate-tgetdefault-" class="cref">TryGetFirst(Void, IInterface, TGetCurrentWithPredicate, TGetDefault)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.trygetlast.html#M-spring.collections.base.tenumerablebase1.trygetlast-t-predicate&lt;t&gt;-" class="cref">TryGetLast(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.trygetlast.html#M-spring.collections.base.tenumerablebase.trygetlast-void-iinterface-tgetcurrentwithpredicate-tgetdefault-" class="cref">TryGetLast(Void, IInterface, TGetCurrentWithPredicate, TGetDefault)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.trygetsingle.html#M-spring.collections.base.tenumerablebase1.trygetsingle-t-predicate&lt;t&gt;-" class="cref">TryGetSingle(T, Predicate&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.trygetsingle.html#M-spring.collections.base.tenumerablebase.trygetsingle-void-iinterface-tgetcurrentwithpredicate-tgetdefault-" class="cref">TryGetSingle(Void, IInterface, TGetCurrentWithPredicate, TGetDefault)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.trygetsingleordefault.html#M-spring.collections.base.tenumerablebase.trygetsingleordefault-void-iinterface-tgetcurrentwithpredicate-" class="cref">TryGetSingleOrDefault(Void, IInterface, TGetCurrentWithPredicate)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="trttitypeiterator-1.trymovenext.html" class="cref">TryMoveNext(T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.union.html#M-spring.collections.base.tenumerablebase1.union-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">Union(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.where.html#M-spring.collections.base.tenumerablebase1.where-func&lt;t- integer- boolean&gt;-" class="cref">Where(Func&lt;T,Integer,Boolean&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.whereindex.html" class="cref">WhereIndex(IInterface, Void, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject._addref.html" class="cref">_AddRef</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject._release.html" class="cref">_Release</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.__suppresswarning.html" class="cref">__SuppressWarning(Void)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#fields" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="fields">Fields</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase-1.fcomparer.html" class="cref">fComparer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase-1.html" data-linktype="relative-path">TEnumerableBase&lt;T&gt;</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring/trefcountedobject.frefcount.html" class="cref">fRefCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring/trefcountedobject.html" data-linktype="relative-path">TRefCountedObject</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.collections.base/tenumerablebase.this.html" class="cref">this</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.collections.base/tenumerablebase.html" data-linktype="relative-path">TEnumerableBase</a>)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#definition" class="font-weight-semibold color-text">Definition</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#properties" class="color-text-subtle">Properties</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#methods" class="color-text-subtle">Methods</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#fields" class="color-text-subtle">Fields</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,3564 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCollections Class | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.base" />
+  <meta name="uid" content="spring4d.api/spring.collections/tcollections" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-base.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.base/index.html" class="cref">Spring.Base</a>
+            </li>
+            <li
+              class="breadcrumbs-item">
+              <a href="index.html" class="cref">Spring.Collections</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              TCollections
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="tcollections.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  TCollections Class</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#definition">Definition</a>
+  </li>
+  <li>
+    <a href="#records">Records</a>
+  </li>
+  <li>
+    <a href="#constants">Constants</a>
+  </li>
+  <li>
+    <a href="#methods">Methods</a>
+  </li>
+</ol>
+        </nav>
+
+        <div class="heading-wrapper" data-heading-level="h2">
+  <a class="anchor-link" href="#definition" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+  <h2 id="definition">Definition</h2>
+</div>
+
+<div class="metadata">
+  <dl class="attributeList">
+    <dt>Unit:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Collections
+      </span>
+    </dd>
+  </dl>
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Base
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+<div class="summaryHolder">
+  <div class="summary clearFix has-text-wrap">
+    <p>  Provides static methods to create an instance of various interfaced
+  generic collections such as <a href="ilist-1.html">  IList&lt;T&gt;</a>   or <a href="idictionary-2.html">  IDictionary&lt;TKey,TValue&gt;</a>  
+   .</p>
+  </div>
+</div>
+
+
+<div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+<pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">type TCollections = class(TObject)</code></pre>
+
+
+
+
+
+
+<dl class="attributeList stack">
+  <dt>Inheritance</dt>
+  <dd>
+    <div class="pdlHolder">
+      <div class="pdl">
+        TObject
+      </div>
+      <span>TCollections</span>
+    </div>
+  </dd>
+</dl>
+
+<dl id="derived" class="attributeList stack">
+  <dt>Derived</dt>
+  <dd>
+    <div>
+      <span class="break-text">
+        <a href="../spring.collections.multimaps/tcollectionshelper.html" data-linktype="relative-path">TCollectionsHelper</a>
+      </span>
+    </div>
+  </dd>
+</dl>
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#records" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="records">Records</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.helper-2.html" class="cref">Helper&lt;TKey,TValue&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#constants" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="constants">Constants</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.foldedtypekinds.html" class="cref">FoldedTypeKinds</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#methods" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="methods">Methods</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-iequalitycomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-integer-iequalitycomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(Integer, IEqualityComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-integer-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(Integer, IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-integer-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(Integer, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary-2.html#M-spring.collections.tcollections.createbididictionary2-tdictionaryownerships-" class="cref">CreateBidiDictionary&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_int16.html" class="cref">CreateBidiDictionary_Int16_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_int32.html" class="cref">CreateBidiDictionary_Int16_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_int64.html" class="cref">CreateBidiDictionary_Int16_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_int8.html" class="cref">CreateBidiDictionary_Int16_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_interface.html" class="cref">CreateBidiDictionary_Int16_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_object.html" class="cref">CreateBidiDictionary_Int16_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int16_string.html" class="cref">CreateBidiDictionary_Int16_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_int16.html" class="cref">CreateBidiDictionary_Int32_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_int32.html" class="cref">CreateBidiDictionary_Int32_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_int64.html" class="cref">CreateBidiDictionary_Int32_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_int8.html" class="cref">CreateBidiDictionary_Int32_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_interface.html" class="cref">CreateBidiDictionary_Int32_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_object.html" class="cref">CreateBidiDictionary_Int32_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int32_string.html" class="cref">CreateBidiDictionary_Int32_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_int16.html" class="cref">CreateBidiDictionary_Int64_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_int32.html" class="cref">CreateBidiDictionary_Int64_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_int64.html" class="cref">CreateBidiDictionary_Int64_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_int8.html" class="cref">CreateBidiDictionary_Int64_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_interface.html" class="cref">CreateBidiDictionary_Int64_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_object.html" class="cref">CreateBidiDictionary_Int64_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int64_string.html" class="cref">CreateBidiDictionary_Int64_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_int16.html" class="cref">CreateBidiDictionary_Int8_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_int32.html" class="cref">CreateBidiDictionary_Int8_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_int64.html" class="cref">CreateBidiDictionary_Int8_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_int8.html" class="cref">CreateBidiDictionary_Int8_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_interface.html" class="cref">CreateBidiDictionary_Int8_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_object.html" class="cref">CreateBidiDictionary_Int8_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_int8_string.html" class="cref">CreateBidiDictionary_Int8_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_int16.html" class="cref">CreateBidiDictionary_Interface_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_int32.html" class="cref">CreateBidiDictionary_Interface_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_int64.html" class="cref">CreateBidiDictionary_Interface_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_int8.html" class="cref">CreateBidiDictionary_Interface_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_interface.html" class="cref">CreateBidiDictionary_Interface_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_object.html" class="cref">CreateBidiDictionary_Interface_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_interface_string.html" class="cref">CreateBidiDictionary_Interface_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_int16.html" class="cref">CreateBidiDictionary_Object_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_int32.html" class="cref">CreateBidiDictionary_Object_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_int64.html" class="cref">CreateBidiDictionary_Object_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_int8.html" class="cref">CreateBidiDictionary_Object_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_interface.html" class="cref">CreateBidiDictionary_Object_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_object.html" class="cref">CreateBidiDictionary_Object_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_object_string.html" class="cref">CreateBidiDictionary_Object_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_int16.html" class="cref">CreateBidiDictionary_String_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_int32.html" class="cref">CreateBidiDictionary_String_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_int64.html" class="cref">CreateBidiDictionary_String_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_int8.html" class="cref">CreateBidiDictionary_String_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_interface.html" class="cref">CreateBidiDictionary_String_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_object.html" class="cref">CreateBidiDictionary_String_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createbididictionary_string_string.html" class="cref">CreateBidiDictionary_String_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundeddeque-1.html#M-spring.collections.tcollections.createboundeddeque1-integer-" class="cref">CreateBoundedDeque&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundeddeque-1.html#M-spring.collections.tcollections.createboundeddeque1-integer-boolean-" class="cref">CreateBoundedDeque&lt;T&gt;(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundedqueue-1.html#M-spring.collections.tcollections.createboundedqueue1-integer-" class="cref">CreateBoundedQueue&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundedqueue-1.html#M-spring.collections.tcollections.createboundedqueue1-integer-boolean-" class="cref">CreateBoundedQueue&lt;T&gt;(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundedstack-1.html#M-spring.collections.tcollections.createboundedstack1-integer-" class="cref">CreateBoundedStack&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createboundedstack-1.html#M-spring.collections.tcollections.createboundedstack1-integer-boolean-" class="cref">CreateBoundedStack&lt;T&gt;(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdeque-1.html#M-spring.collections.tcollections.createdeque1" class="cref">CreateDeque&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdeque-1.html#M-spring.collections.tcollections.createdeque1-boolean-" class="cref">CreateDeque&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdeque-1.html#M-spring.collections.tcollections.createdeque1-ienumerable&lt;t&gt;-" class="cref">CreateDeque&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdeque-1.html#M-spring.collections.tcollections.createdeque1-array of t-" class="cref">CreateDeque&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-iequalitycomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-integer-iequalitycomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(Integer, IEqualityComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-integer-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(Integer, IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-integer-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(Integer, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary-2.html#M-spring.collections.tcollections.createdictionary2-tdictionaryownerships-" class="cref">CreateDictionary&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_int16.html" class="cref">CreateDictionary_Int16_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_int32.html" class="cref">CreateDictionary_Int16_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_int64.html" class="cref">CreateDictionary_Int16_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_int8.html" class="cref">CreateDictionary_Int16_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_interface.html" class="cref">CreateDictionary_Int16_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_method.html" class="cref">CreateDictionary_Int16_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_object.html" class="cref">CreateDictionary_Int16_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int16_string.html" class="cref">CreateDictionary_Int16_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_int16.html" class="cref">CreateDictionary_Int32_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_int32.html" class="cref">CreateDictionary_Int32_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_int64.html" class="cref">CreateDictionary_Int32_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_int8.html" class="cref">CreateDictionary_Int32_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_interface.html" class="cref">CreateDictionary_Int32_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_method.html" class="cref">CreateDictionary_Int32_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_object.html" class="cref">CreateDictionary_Int32_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int32_string.html" class="cref">CreateDictionary_Int32_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_int16.html" class="cref">CreateDictionary_Int64_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_int32.html" class="cref">CreateDictionary_Int64_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_int64.html" class="cref">CreateDictionary_Int64_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_int8.html" class="cref">CreateDictionary_Int64_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_interface.html" class="cref">CreateDictionary_Int64_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_method.html" class="cref">CreateDictionary_Int64_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_object.html" class="cref">CreateDictionary_Int64_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int64_string.html" class="cref">CreateDictionary_Int64_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_int16.html" class="cref">CreateDictionary_Int8_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_int32.html" class="cref">CreateDictionary_Int8_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_int64.html" class="cref">CreateDictionary_Int8_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_int8.html" class="cref">CreateDictionary_Int8_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_interface.html" class="cref">CreateDictionary_Int8_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_method.html" class="cref">CreateDictionary_Int8_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_object.html" class="cref">CreateDictionary_Int8_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_int8_string.html" class="cref">CreateDictionary_Int8_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_int16.html" class="cref">CreateDictionary_Interface_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_int32.html" class="cref">CreateDictionary_Interface_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_int64.html" class="cref">CreateDictionary_Interface_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_int8.html" class="cref">CreateDictionary_Interface_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_interface.html" class="cref">CreateDictionary_Interface_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_method.html" class="cref">CreateDictionary_Interface_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_object.html" class="cref">CreateDictionary_Interface_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_interface_string.html" class="cref">CreateDictionary_Interface_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_int16.html" class="cref">CreateDictionary_Object_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_int32.html" class="cref">CreateDictionary_Object_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_int64.html" class="cref">CreateDictionary_Object_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_int8.html" class="cref">CreateDictionary_Object_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_interface.html" class="cref">CreateDictionary_Object_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_method.html" class="cref">CreateDictionary_Object_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_object.html" class="cref">CreateDictionary_Object_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_object_string.html" class="cref">CreateDictionary_Object_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_int16.html" class="cref">CreateDictionary_String_Int16(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_int32.html" class="cref">CreateDictionary_String_Int32(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_int64.html" class="cref">CreateDictionary_String_Int64(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_int8.html" class="cref">CreateDictionary_String_Int8(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_interface.html" class="cref">CreateDictionary_String_Interface(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_method.html" class="cref">CreateDictionary_String_Method(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_object.html" class="cref">CreateDictionary_String_Object(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createdictionary_string_string.html" class="cref">CreateDictionary_String_String(Integer, Pointer, Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createevictingdeque-1.html#M-spring.collections.tcollections.createevictingdeque1-integer-" class="cref">CreateEvictingDeque&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createevictingdeque-1.html#M-spring.collections.tcollections.createevictingdeque1-integer-boolean-" class="cref">CreateEvictingDeque&lt;T&gt;(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createevictingqueue-1.html#M-spring.collections.tcollections.createevictingqueue1-integer-" class="cref">CreateEvictingQueue&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createevictingqueue-1.html#M-spring.collections.tcollections.createevictingqueue1-integer-boolean-" class="cref">CreateEvictingQueue&lt;T&gt;(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashmultimap-2.html#M-spring.collections.tcollections.createhashmultimap2-iequalitycomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateHashMultiMap&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashmultimap-2.html#M-spring.collections.tcollections.createhashmultimap2-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateHashMultiMap&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashmultimap-2.html#M-spring.collections.tcollections.createhashmultimap2-tdictionaryownerships-" class="cref">CreateHashMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_int16.html" class="cref">CreateHashSet_Int16(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_int32.html" class="cref">CreateHashSet_Int32(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_int64.html" class="cref">CreateHashSet_Int64(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_int8.html" class="cref">CreateHashSet_Int8(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_interface.html" class="cref">CreateHashSet_Interface(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_object.html" class="cref">CreateHashSet_Object(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createhashset_string.html" class="cref">CreateHashSet_String(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist-ptypeinfo-" class="cref">CreateInterfaceList(PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist1" class="cref">CreateInterfaceList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist1-icomparer&lt;t&gt;-" class="cref">CreateInterfaceList&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist1-ienumerable&lt;t&gt;-" class="cref">CreateInterfaceList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist1-tcomparison&lt;t&gt;-" class="cref">CreateInterfaceList&lt;T&gt;(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createinterfacelist-1.html#M-spring.collections.tcollections.createinterfacelist1-array of t-" class="cref">CreateInterfaceList&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1" class="cref">CreateList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-boolean-" class="cref">CreateList&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-icomparer&lt;t&gt;-" class="cref">CreateList&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-icomparer&lt;t&gt;-boolean-" class="cref">CreateList&lt;T&gt;(IComparer&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-ienumerable&lt;t&gt;-" class="cref">CreateList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-tcomparison&lt;t&gt;-" class="cref">CreateList&lt;T&gt;(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-tcomparison&lt;t&gt;-boolean-" class="cref">CreateList&lt;T&gt;(TComparison&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist-1.html#M-spring.collections.tcollections.createlist1-array of t-" class="cref">CreateList&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_int16.html" class="cref">CreateListMultiMap_Int16_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_int32.html" class="cref">CreateListMultiMap_Int16_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_int64.html" class="cref">CreateListMultiMap_Int16_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_int8.html" class="cref">CreateListMultiMap_Int16_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_interface.html" class="cref">CreateListMultiMap_Int16_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_object.html" class="cref">CreateListMultiMap_Int16_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int16_string.html" class="cref">CreateListMultiMap_Int16_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_int16.html" class="cref">CreateListMultiMap_Int32_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_int32.html" class="cref">CreateListMultiMap_Int32_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_int64.html" class="cref">CreateListMultiMap_Int32_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_int8.html" class="cref">CreateListMultiMap_Int32_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_interface.html" class="cref">CreateListMultiMap_Int32_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_object.html" class="cref">CreateListMultiMap_Int32_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int32_string.html" class="cref">CreateListMultiMap_Int32_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_int16.html" class="cref">CreateListMultiMap_Int64_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_int32.html" class="cref">CreateListMultiMap_Int64_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_int64.html" class="cref">CreateListMultiMap_Int64_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_int8.html" class="cref">CreateListMultiMap_Int64_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_interface.html" class="cref">CreateListMultiMap_Int64_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_object.html" class="cref">CreateListMultiMap_Int64_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int64_string.html" class="cref">CreateListMultiMap_Int64_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_int16.html" class="cref">CreateListMultiMap_Int8_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_int32.html" class="cref">CreateListMultiMap_Int8_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_int64.html" class="cref">CreateListMultiMap_Int8_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_int8.html" class="cref">CreateListMultiMap_Int8_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_interface.html" class="cref">CreateListMultiMap_Int8_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_object.html" class="cref">CreateListMultiMap_Int8_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_int8_string.html" class="cref">CreateListMultiMap_Int8_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_int16.html" class="cref">CreateListMultiMap_Interface_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_int32.html" class="cref">CreateListMultiMap_Interface_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_int64.html" class="cref">CreateListMultiMap_Interface_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_int8.html" class="cref">CreateListMultiMap_Interface_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_interface.html" class="cref">CreateListMultiMap_Interface_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_object.html" class="cref">CreateListMultiMap_Interface_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_interface_string.html" class="cref">CreateListMultiMap_Interface_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_int16.html" class="cref">CreateListMultiMap_Object_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_int32.html" class="cref">CreateListMultiMap_Object_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_int64.html" class="cref">CreateListMultiMap_Object_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_int8.html" class="cref">CreateListMultiMap_Object_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_interface.html" class="cref">CreateListMultiMap_Object_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_object.html" class="cref">CreateListMultiMap_Object_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_object_string.html" class="cref">CreateListMultiMap_Object_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_int16.html" class="cref">CreateListMultiMap_String_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_int32.html" class="cref">CreateListMultiMap_String_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_int64.html" class="cref">CreateListMultiMap_String_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_int8.html" class="cref">CreateListMultiMap_String_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_interface.html" class="cref">CreateListMultiMap_String_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_object.html" class="cref">CreateListMultiMap_String_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlistmultimap_string_string.html" class="cref">CreateListMultiMap_String_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_int16.html" class="cref">CreateList_Int16(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_int32.html" class="cref">CreateList_Int32(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_int64.html" class="cref">CreateList_Int64(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_int8.html" class="cref">CreateList_Int8(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_interface.html#M-spring.collections.tcollections.createlist_interface-pointer-void-pointer-" class="cref">CreateList_Interface(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_interface.html#M-spring.collections.tcollections.createlist_interface-void-pointer-" class="cref">CreateList_Interface(Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_method.html" class="cref">CreateList_Method(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_object.html#M-spring.collections.tcollections.createlist_object-boolean-void-pointer-" class="cref">CreateList_Object(Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_object.html#M-spring.collections.tcollections.createlist_object-pointer-boolean-void-pointer-" class="cref">CreateList_Object(Pointer, Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_object.html#M-spring.collections.tcollections.createlist_object-void-pointer-" class="cref">CreateList_Object(Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createlist_string.html" class="cref">CreateList_String(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultimap-2.html#M-spring.collections.tcollections.createmultimap2-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateMultiMap&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultimap-2.html#M-spring.collections.tcollections.createmultimap2-tdictionaryownerships-" class="cref">CreateMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1" class="cref">CreateMultiSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1-ienumerable&lt;t&gt;-" class="cref">CreateMultiSet&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">CreateMultiSet&lt;T&gt;(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1-iequalitycomparer&lt;t&gt;-" class="cref">CreateMultiSet&lt;T&gt;(IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1-array of t-" class="cref">CreateMultiSet&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createmultiset-1.html#M-spring.collections.tcollections.createmultiset1-array of t-iequalitycomparer&lt;t&gt;-" class="cref">CreateMultiSet&lt;T&gt;(array of T, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist-ptypeinfo-boolean-" class="cref">CreateObjectList(PTypeInfo, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1" class="cref">CreateObjectList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1-boolean-" class="cref">CreateObjectList&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1-icomparer&lt;t&gt;-boolean-" class="cref">CreateObjectList&lt;T&gt;(IComparer&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1-ienumerable&lt;t&gt;-boolean-" class="cref">CreateObjectList&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1-tcomparison&lt;t&gt;-boolean-" class="cref">CreateObjectList&lt;T&gt;(TComparison&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobjectlist-1.html#M-spring.collections.tcollections.createobjectlist1-array of t-boolean-" class="cref">CreateObjectList&lt;T&gt;(array of T, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobservableinterfacelist-1.html" class="cref">CreateObservableInterfaceList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobservablelist-1.html" class="cref">CreateObservableList&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobservablelist_interface.html" class="cref">CreateObservableList_Interface(Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createobservablelist_object.html" class="cref">CreateObservableList_Object(Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue-1.html#M-spring.collections.tcollections.createqueue1" class="cref">CreateQueue&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue-1.html#M-spring.collections.tcollections.createqueue1-boolean-" class="cref">CreateQueue&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue-1.html#M-spring.collections.tcollections.createqueue1-ienumerable&lt;t&gt;-" class="cref">CreateQueue&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue-1.html#M-spring.collections.tcollections.createqueue1-array of t-" class="cref">CreateQueue&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue_interface.html" class="cref">CreateQueue_Interface(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createqueue_object.html" class="cref">CreateQueue_Object(Integer, Pointer, Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1" class="cref">CreateSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-ienumerable&lt;t&gt;-" class="cref">CreateSet&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-ienumerable&lt;t&gt;-iequalitycomparer&lt;t&gt;-" class="cref">CreateSet&lt;T&gt;(IEnumerable&lt;T&gt;, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-iequalitycomparer&lt;t&gt;-" class="cref">CreateSet&lt;T&gt;(IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-integer-" class="cref">CreateSet&lt;T&gt;(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-integer-iequalitycomparer&lt;t&gt;-" class="cref">CreateSet&lt;T&gt;(Integer, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-array of t-" class="cref">CreateSet&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createset-1.html#M-spring.collections.tcollections.createset1-array of t-iequalitycomparer&lt;t&gt;-" class="cref">CreateSet&lt;T&gt;(array of T, IEqualityComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsorteddictionary-2.html#M-spring.collections.tcollections.createsorteddictionary2-icomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateSortedDictionary&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsorteddictionary-2.html#M-spring.collections.tcollections.createsorteddictionary2-icomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateSortedDictionary&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsorteddictionary-2.html#M-spring.collections.tcollections.createsorteddictionary2-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateSortedDictionary&lt;TKey,TValue&gt;(IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsorteddictionary-2.html#M-spring.collections.tcollections.createsorteddictionary2-tdictionaryownerships-" class="cref">CreateSortedDictionary&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedhashmultimap-2.html#M-spring.collections.tcollections.createsortedhashmultimap2-icomparer&lt;tkey&gt;-iequalitycomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateSortedHashMultiMap&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, IEqualityComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedhashmultimap-2.html#M-spring.collections.tcollections.createsortedhashmultimap2-icomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateSortedHashMultiMap&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedhashmultimap-2.html#M-spring.collections.tcollections.createsortedhashmultimap2-tdictionaryownerships-" class="cref">CreateSortedHashMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedinterfacelist-1.html#M-spring.collections.tcollections.createsortedinterfacelist1" class="cref">CreateSortedInterfaceList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedinterfacelist-1.html#M-spring.collections.tcollections.createsortedinterfacelist1-icomparer&lt;t&gt;-" class="cref">CreateSortedInterfaceList&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedinterfacelist-1.html#M-spring.collections.tcollections.createsortedinterfacelist1-ienumerable&lt;t&gt;-" class="cref">CreateSortedInterfaceList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedinterfacelist-1.html#M-spring.collections.tcollections.createsortedinterfacelist1-tcomparison&lt;t&gt;-" class="cref">CreateSortedInterfaceList&lt;T&gt;(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedinterfacelist-1.html#M-spring.collections.tcollections.createsortedinterfacelist1-array of t-" class="cref">CreateSortedInterfaceList&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1" class="cref">CreateSortedList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-boolean-" class="cref">CreateSortedList&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-icomparer&lt;t&gt;-" class="cref">CreateSortedList&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-icomparer&lt;t&gt;-boolean-" class="cref">CreateSortedList&lt;T&gt;(IComparer&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-ienumerable&lt;t&gt;-" class="cref">CreateSortedList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-tcomparison&lt;t&gt;-" class="cref">CreateSortedList&lt;T&gt;(TComparison&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-tcomparison&lt;t&gt;-boolean-" class="cref">CreateSortedList&lt;T&gt;(TComparison&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist-1.html#M-spring.collections.tcollections.createsortedlist1-array of t-" class="cref">CreateSortedList&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_int16.html" class="cref">CreateSortedListMultiMap_Int16_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_int32.html" class="cref">CreateSortedListMultiMap_Int16_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_int64.html" class="cref">CreateSortedListMultiMap_Int16_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_int8.html" class="cref">CreateSortedListMultiMap_Int16_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_interface.html" class="cref">CreateSortedListMultiMap_Int16_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_object.html" class="cref">CreateSortedListMultiMap_Int16_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int16_string.html" class="cref">CreateSortedListMultiMap_Int16_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_int16.html" class="cref">CreateSortedListMultiMap_Int32_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_int32.html" class="cref">CreateSortedListMultiMap_Int32_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_int64.html" class="cref">CreateSortedListMultiMap_Int32_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_int8.html" class="cref">CreateSortedListMultiMap_Int32_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_interface.html" class="cref">CreateSortedListMultiMap_Int32_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_object.html" class="cref">CreateSortedListMultiMap_Int32_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int32_string.html" class="cref">CreateSortedListMultiMap_Int32_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_int16.html" class="cref">CreateSortedListMultiMap_Int64_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_int32.html" class="cref">CreateSortedListMultiMap_Int64_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_int64.html" class="cref">CreateSortedListMultiMap_Int64_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_int8.html" class="cref">CreateSortedListMultiMap_Int64_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_interface.html" class="cref">CreateSortedListMultiMap_Int64_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_object.html" class="cref">CreateSortedListMultiMap_Int64_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int64_string.html" class="cref">CreateSortedListMultiMap_Int64_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_int16.html" class="cref">CreateSortedListMultiMap_Int8_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_int32.html" class="cref">CreateSortedListMultiMap_Int8_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_int64.html" class="cref">CreateSortedListMultiMap_Int8_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_int8.html" class="cref">CreateSortedListMultiMap_Int8_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_interface.html" class="cref">CreateSortedListMultiMap_Int8_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_object.html" class="cref">CreateSortedListMultiMap_Int8_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_int8_string.html" class="cref">CreateSortedListMultiMap_Int8_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_int16.html" class="cref">CreateSortedListMultiMap_Interface_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_int32.html" class="cref">CreateSortedListMultiMap_Interface_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_int64.html" class="cref">CreateSortedListMultiMap_Interface_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_int8.html" class="cref">CreateSortedListMultiMap_Interface_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_interface.html" class="cref">CreateSortedListMultiMap_Interface_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_object.html" class="cref">CreateSortedListMultiMap_Interface_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_interface_string.html" class="cref">CreateSortedListMultiMap_Interface_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_int16.html" class="cref">CreateSortedListMultiMap_Object_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_int32.html" class="cref">CreateSortedListMultiMap_Object_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_int64.html" class="cref">CreateSortedListMultiMap_Object_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_int8.html" class="cref">CreateSortedListMultiMap_Object_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_interface.html" class="cref">CreateSortedListMultiMap_Object_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_object.html" class="cref">CreateSortedListMultiMap_Object_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_object_string.html" class="cref">CreateSortedListMultiMap_Object_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_int16.html" class="cref">CreateSortedListMultiMap_String_Int16(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_int32.html" class="cref">CreateSortedListMultiMap_String_Int32(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_int64.html" class="cref">CreateSortedListMultiMap_String_Int64(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_int8.html" class="cref">CreateSortedListMultiMap_String_Int8(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_interface.html" class="cref">CreateSortedListMultiMap_String_Interface(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_object.html" class="cref">CreateSortedListMultiMap_String_Object(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlistmultimap_string_string.html" class="cref">CreateSortedListMultiMap_String_String(Pointer, TDictionaryOwnerships, Void, PTypeInfo, PTypeInfo, PTypeInfo)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_int16.html" class="cref">CreateSortedList_Int16(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_int32.html" class="cref">CreateSortedList_Int32(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_int64.html" class="cref">CreateSortedList_Int64(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_int8.html" class="cref">CreateSortedList_Int8(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_interface.html" class="cref">CreateSortedList_Interface(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_object.html" class="cref">CreateSortedList_Object(Pointer, Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedlist_string.html" class="cref">CreateSortedList_String(Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultimap-2.html#M-spring.collections.tcollections.createsortedmultimap2-icomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateSortedMultiMap&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultimap-2.html#M-spring.collections.tcollections.createsortedmultimap2-tdictionaryownerships-" class="cref">CreateSortedMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1" class="cref">CreateSortedMultiSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1-icomparer&lt;t&gt;-" class="cref">CreateSortedMultiSet&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1-ienumerable&lt;t&gt;-" class="cref">CreateSortedMultiSet&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1-ienumerable&lt;t&gt;-icomparer&lt;t&gt;-" class="cref">CreateSortedMultiSet&lt;T&gt;(IEnumerable&lt;T&gt;, IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1-array of t-" class="cref">CreateSortedMultiSet&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedmultiset-1.html#M-spring.collections.tcollections.createsortedmultiset1-array of t-icomparer&lt;t&gt;-" class="cref">CreateSortedMultiSet&lt;T&gt;(array of T, IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedobjectlist-1.html#M-spring.collections.tcollections.createsortedobjectlist1-boolean-" class="cref">CreateSortedObjectList&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedobjectlist-1.html#M-spring.collections.tcollections.createsortedobjectlist1-icomparer&lt;t&gt;-boolean-" class="cref">CreateSortedObjectList&lt;T&gt;(IComparer&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedobjectlist-1.html#M-spring.collections.tcollections.createsortedobjectlist1-ienumerable&lt;t&gt;-boolean-" class="cref">CreateSortedObjectList&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedobjectlist-1.html#M-spring.collections.tcollections.createsortedobjectlist1-tcomparison&lt;t&gt;-boolean-" class="cref">CreateSortedObjectList&lt;T&gt;(TComparison&lt;T&gt;, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedobjectlist-1.html#M-spring.collections.tcollections.createsortedobjectlist1-array of t-boolean-" class="cref">CreateSortedObjectList&lt;T&gt;(array of T, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1" class="cref">CreateSortedSet&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1-icomparer&lt;t&gt;-" class="cref">CreateSortedSet&lt;T&gt;(IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1-ienumerable&lt;t&gt;-" class="cref">CreateSortedSet&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1-ienumerable&lt;t&gt;-icomparer&lt;t&gt;-" class="cref">CreateSortedSet&lt;T&gt;(IEnumerable&lt;T&gt;, IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1-array of t-" class="cref">CreateSortedSet&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedset-1.html#M-spring.collections.tcollections.createsortedset1-array of t-icomparer&lt;t&gt;-" class="cref">CreateSortedSet&lt;T&gt;(array of T, IComparer&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedtreemultimap-2.html#M-spring.collections.tcollections.createsortedtreemultimap2-icomparer&lt;tkey&gt;-icomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateSortedTreeMultiMap&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, IComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedtreemultimap-2.html#M-spring.collections.tcollections.createsortedtreemultimap2-icomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateSortedTreeMultiMap&lt;TKey,TValue&gt;(IComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createsortedtreemultimap-2.html#M-spring.collections.tcollections.createsortedtreemultimap2-tdictionaryownerships-" class="cref">CreateSortedTreeMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack-1.html#M-spring.collections.tcollections.createstack1" class="cref">CreateStack&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack-1.html#M-spring.collections.tcollections.createstack1-boolean-" class="cref">CreateStack&lt;T&gt;(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack-1.html#M-spring.collections.tcollections.createstack1-ienumerable&lt;t&gt;-" class="cref">CreateStack&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack-1.html#M-spring.collections.tcollections.createstack1-array of t-" class="cref">CreateStack&lt;T&gt;(array of T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack_interface.html" class="cref">CreateStack_Interface(Integer, Pointer, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstack_object.html" class="cref">CreateStack_Object(Integer, Pointer, Boolean, Void, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html" class="cref">CreateStringList</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html#M-spring.collections.tcollections.createstringlist-icomparer&lt;string&gt;-" class="cref">CreateStringList(IComparer&lt;string&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html#M-spring.collections.tcollections.createstringlist-ienumerable&lt;string&gt;-" class="cref">CreateStringList(IEnumerable&lt;string&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html#M-spring.collections.tcollections.createstringlist-tcomparison&lt;string&gt;-" class="cref">CreateStringList(TComparison&lt;string&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html#M-spring.collections.tcollections.createstringlist-tstrings-boolean-" class="cref">CreateStringList(TStrings, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createstringlist.html#M-spring.collections.tcollections.createstringlist-array of string-" class="cref">CreateStringList(array of string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createtreemultimap-2.html#M-spring.collections.tcollections.createtreemultimap2-iequalitycomparer&lt;tkey&gt;-icomparer&lt;tvalue&gt;-tdictionaryownerships-" class="cref">CreateTreeMultiMap&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, IComparer&lt;TValue&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createtreemultimap-2.html#M-spring.collections.tcollections.createtreemultimap2-iequalitycomparer&lt;tkey&gt;-tdictionaryownerships-" class="cref">CreateTreeMultiMap&lt;TKey,TValue&gt;(IEqualityComparer&lt;TKey&gt;, TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tcollections.createtreemultimap-2.html#M-spring.collections.tcollections.createtreemultimap2-tdictionaryownerships-" class="cref">CreateTreeMultiMap&lt;TKey,TValue&gt;(TDictionaryOwnerships)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#definition" class="font-weight-semibold color-text">Definition</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#records" class="color-text-subtle">Records</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#constants" class="color-text-subtle">Constants</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#methods" class="color-text-subtle">Methods</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

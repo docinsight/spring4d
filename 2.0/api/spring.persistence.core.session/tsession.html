@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TSession Class | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.persistence" />
+  <meta name="uid" content="spring4d.api/spring.persistence.core.session/tsession" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-persistence.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.persistence/index.html" class="cref">Spring.Persistence</a>
+            </li>
+            <li
+              class="breadcrumbs-item">
+              <a href="index.html" class="cref">Spring.Persistence.Core.Session</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              TSession
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="tsession.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  TSession Class</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#definition">Definition</a>
+  </li>
+  <li>
+    <a href="#constructors">Constructors</a>
+  </li>
+  <li>
+    <a href="#properties">Properties</a>
+  </li>
+  <li>
+    <a href="#methods">Methods</a>
+  </li>
+</ol>
+        </nav>
+
+        <div class="heading-wrapper" data-heading-level="h2">
+  <a class="anchor-link" href="#definition" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+  <h2 id="definition">Definition</h2>
+</div>
+
+<div class="metadata">
+  <dl class="attributeList">
+    <dt>Unit:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Persistence.Core.Session
+      </span>
+    </dd>
+  </dl>
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Persistence
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+<div class="summaryHolder">
+  <div class="summary clearFix has-text-wrap">
+    <p>  The main runtime class between an application and ORM. This is the
+  central API class abstracting the notion of a persistence service. The
+  main function of the Session is to offer create, read and delete
+  operations for instances of mapped entity classes. <a href="tsession.insert.html">  Insert</a>   results in an SQL <code>insert</code>  , <a href="tsession.delete.html">  Delete</a>   in an SQL <code>delete</code>   and <a href="tsession.update.html">  Update</a>   in an SQL <code>update</code>  . Changes to persistent instances
+  are detected at flush time and also result in an SQL <code>update</code>  . <a href="tsession.save.html">  Save</a>   results in either an <code>insert</code>   or an <code>update</code>  . It
+  is not intended that implementers be thread-safe. Instead each
+  thread&#x2f;transaction should obtain its own instance from a
+  SessionFactory.</p>
+  </div>
+</div>
+
+
+<div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+<pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">type TSession = class(TAbstractSession)</code></pre>
+
+
+
+
+
+
+<dl class="attributeList stack">
+  <dt>Inheritance</dt>
+  <dd>
+    <div class="pdlHolder">
+      <div class="pdl">
+        TObject
+      </div>
+      <div class="pdl">
+        <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>
+      </div>
+      <span>TSession</span>
+    </div>
+  </dd>
+</dl>
+
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#constructors" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="constructors">Constructors</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.create.html#M-spring.persistence.core.abstractsession.tabstractsession.create-idbconnection-ientitymap-" class="cref">Create(IDBConnection, IEntityMap)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.destroy.html" class="cref">Destroy</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#properties" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="properties">Properties</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.connection.html" class="cref">Connection</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.oldstateentities.html" class="cref">OldStateEntities</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#methods" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="methods">Methods</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.attachentity.html" class="cref">AttachEntity(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.beginlistsession-1.html" class="cref">BeginListSession&lt;T&gt;(IList&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Starts a new List Session. ListSession monitors changes in the
+  specified list and can commit or rollback these changes to the
+  database</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.begintransaction.html" class="cref">BeginTransaction</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Starts a new transaction.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.createcriteria-1.html" class="cref">CreateCriteria&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Create a new ICriteria&lt;T&gt; instance, for the given entity class,
+  or a superclass of an entity class.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.delete.html" class="cref">Delete(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Removes model from the database.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.deletelist-1.html" class="cref">DeleteList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Removes models from the database.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.detachentity.html" class="cref">DetachEntity(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.dodelete.html" class="cref">DoDelete(TObject, IDeleteCommand)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.doinsert.html" class="cref">DoInsert(TObject, IInsertCommand)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.doupdate.html" class="cref">DoUpdate(TObject, IUpdateCommand)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.execute.html" class="cref">Execute(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Executes sql statement which does not return resultset.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.executescalar-1.html" class="cref">ExecuteScalar&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Executes given sql statement and returns first column value. SQL
+    statement should be like this:</p><p>  
+  </p><div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+  <pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">SELECT COUNT(*) FROM TABLE;</code></pre>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.fetchfromcustomquery.html#M-spring.persistence.core.abstractsession.tabstractsession.fetchfromcustomquery-string-ienumerable&lt;tdbparam&gt;-iobjectlist-tclass-" class="cref">FetchFromCustomQuery(string, IEnumerable&lt;TDBParam&gt;, IObjectList, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves multiple models from the resultset into a list of entities.</p>
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.findall-1.html" class="cref">FindAll&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves all models from PODO database table.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.findone-1.html" class="cref">FindOne&lt;T&gt;(TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves single model from the database based on its primary key
+  value. If record not found, nil is returned.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.findwhere-1.html" class="cref">FindWhere&lt;T&gt;(ICriterion)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Create a new ICriteria&lt;T&gt; instance, for the given entity class
+  using expression to filter elements</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.first-1.html" class="cref">First&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves first and only model from the sql statement. Raises an <code>exception</code>   if model does not exist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.firstordefault-1.html" class="cref">FirstOrDefault&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves first and only model or the default value if model does not
+  exist.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getdeletecommandexecutor.html" class="cref">GetDeleteCommandExecutor(TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getinsertcommandexecutor.html" class="cref">GetInsertCommandExecutor(TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.getlist-1.html#M-spring.persistence.core.session.tsession.getlist1-string-ienumerable&lt;tdbparam&gt;-" class="cref">GetList&lt;T&gt;(string, IEnumerable&lt;TDBParam&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves multiple models from the sql statement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.getlist-1.html#M-spring.persistence.core.session.tsession.getlist1-string-array of tvalue-" class="cref">GetList&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves multiple models from the sql statement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.getquerycount.html" class="cref">GetQueryCount(string, IEnumerable&lt;TDBParam&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.getquerycountsql.html" class="cref">GetQueryCountSql(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getresultset.html#M-spring.persistence.core.abstractsession.tabstractsession.getresultset-string-ienumerable&lt;tdbparam&gt;-" class="cref">GetResultSet(string, IEnumerable&lt;TDBParam&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Gets the resultset from SQL statement.</p>
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getresultsetbyid.html" class="cref">GetResultSetById(TClass, TValue, TClass, ColumnAttribute)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Get the resultset containing the item(s) matching the given id.</p>
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getselectbyidcommandexecutor.html" class="cref">GetSelectByIdCommandExecutor(TClass, TValue, TClass, ColumnAttribute)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getselectcommandexecutor.html" class="cref">GetSelectCommandExecutor(TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.getupdatecommandexecutor.html" class="cref">GetUpdateCommandExecutor(TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.insert.html" class="cref">Insert(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Inserts model to the database.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.insertall.html" class="cref">InsertAll(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Inserts model and its aggregations to the database.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.insertlist-1.html" class="cref">InsertList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Inserts models to the database.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.isnew.html" class="cref">IsNew(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Checks if given entity is newly created (does not exist in the
+  database yet).</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.mapentitiesfromresultset.html" class="cref">MapEntitiesFromResultSet(IDBResultSet, IObjectList, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Maps resultset into a list of entities</p>
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.mapentityfromresultsetrow.html" class="cref">MapEntityFromResultSetRow(IDBResultSet, TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Maps resultset row into an entity instance</p>
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.page-1.html#M-spring.persistence.core.session.tsession.page1-integer-integer-" class="cref">Page&lt;T&gt;(Integer, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Fetches data in pages. Pages are 1-indexed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.page-1.html#M-spring.persistence.core.session.tsession.page1-integer-integer-string-ienumerable&lt;tdbparam&gt;-" class="cref">Page&lt;T&gt;(Integer, Integer, string, IEnumerable&lt;TDBParam&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Fetches data in pages. You do not need to write custom sql for this,
+  just use ordinary sql. All the work will be done for you. Pages are
+  1-indexed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.page-1.html#M-spring.persistence.core.session.tsession.page1-integer-integer-string-array of tvalue-" class="cref">Page&lt;T&gt;(Integer, Integer, string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Fetches data in pages. You do not need to write custom sql for this,
+  just use ordinary sql. All the work will be done for you. Pages are
+  1-indexed.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.registernongenericrowmapper.html" class="cref">RegisterNonGenericRowMapper(TClass, IRowMapper)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.registerrowmapper-1.html" class="cref">RegisterRowMapper&lt;T&gt;(IRowMapper&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.save.html" class="cref">Save(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Saves the entity to the database. It will do update or the insert
+  based on the entity state.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.saveall.html" class="cref">SaveAll(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Saves the entity and all entities it contains to the database. It
+  will do update or the insert based on the entity state.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.savelist-1.html" class="cref">SaveList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Saves entities to the database. It will do update or the insert based
+  on the entity state.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.single-1.html" class="cref">Single&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves only one entity model from the database. Raises an <code>exception</code>   if model does not exist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.singleordefault-1.html" class="cref">SingleOrDefault&lt;T&gt;(string, array of TValue)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Retrieves only one entity model from the database. Returns default
+  value if model does not exist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.tryfirst-1.html" class="cref">TryFirst&lt;T&gt;(string, array of TValue, T)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Tries to retrieves first and only model from the sql statement. If
+  not succeeds, returns false.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.unregisternongenericrowmapper.html" class="cref">UnregisterNonGenericRowMapper(TClass)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.unregisterrowmapper-1.html" class="cref">UnregisterRowMapper&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.update.html" class="cref">Update(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Updates model in the database.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.updateall.html" class="cref">UpdateAll(TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Updates model and its aggregations in the database.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.persistence.core.abstractsession/tabstractsession.updateforeignkeys.html" class="cref">UpdateForeignKeys(TObject, TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.persistence.core.abstractsession/tabstractsession.html" data-linktype="relative-path">TAbstractSession</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tsession.updatelist-1.html" class="cref">UpdateList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Updates multiple models in the database.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#definition" class="font-weight-semibold color-text">Definition</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#constructors" class="color-text-subtle">Constructors</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#properties" class="color-text-subtle">Properties</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#methods" class="color-text-subtle">Methods</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>

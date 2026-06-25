@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html class="layout layout-holy-grail" lang="en-US"
+  dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TObjectDataSet Class | DocInsight Showcase</title>
+  <meta name="description" content="An unofficial documentation showcase for Spring4D, a modern, comprehensive code library for Delphi, built with DocInsight." />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="generator" content="DocInsight" />
+  <meta name="toc-key" content="api:project/spring.data" />
+  <meta name="uid" content="spring4d.api/spring.data.objectdataset/tobjectdataset" />
+  <meta name="search-index" content="../../_static/themes/learn/search/api.js" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon" sizes="any" />
+  <link rel="stylesheet" href="../../_static/themes/learn/assets/learn.08b892543dc6.css" />
+  <script src="../../_static/themes/learn/toc/api-project-spring-data.js"></script>
+  <script src="../../_static/themes/learn/assets/learn.429029d00211.js" defer></script>
+</head>
+
+<body id="body" class="layout-body">
+
+  <header id="header" class="layout-body-header background-color-body-medium">
+    <div class="site-header display-flex align-items-center ">
+      <a href="../../index.html" class="site-header-brand padding-left-none">
+        <span>Spring4D Showcase</span>
+      </a>
+
+      <nav aria-label="site header nav" class="site-header-nav display-flex align-items-center gap-xxs">
+        <ul class="display-none display-flex-tablet justify-content-space-between gap-none">
+          <li>
+            <a class="site-header-button" href="../../introduction.html"><span>Guide</span></a>
+          </li>
+          <li>
+            <a class="site-header-button font-weight-semibold" href="../spring.base/index.html"><span>API Reference</span></a>
+          </li>
+        </ul>
+
+        <form role="search" aria-label="Search" id="search-container" class="margin-left-xss margin-left-lg-tablet">
+          <div class="autocomplete display-block">
+            <div class="position-relative">
+              <input class="input input-icon input-sm" type="text" placeholder="Search API Reference" aria-expanded="false"
+                aria-activedescendant="">
+              <span class="icon search" aria-hidden="true"></span>
+            </div>
+            <ul role="listbox" id="search-suggestions"
+              class="autocomplete-suggestions is-vertically-scrollable padding-xxs" aria-label="Suggestions" hidden>
+            </ul>
+          </div>
+        </form>
+
+        <div class="display-flex flex-wrap-no-wrap margin-left-auto">
+          <button id="color-mode-toggle" title="Toggle color mode" aria-label="Toggle color mode" class="button button-clear">
+            <span class="icon color-mode" aria-hidden="true">
+            </span>
+          </button>
+          <a aria-label="Visit repository" class="button button-clear" href="https://bitbucket.org/sglienke/spring4d" data-external="true" target="_blank" rel="noopener">
+            <span class="icon repository bitbucket" aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="layout-body-menu" class="layout-body-menu border-right display-flex background-color-body-medium">
+    <div id="left-container"
+      class="left-container display-none display-block-tablet padding-inline-sm padding-bottom-sm width-full">
+      <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column"
+        aria-label="Primary">
+      </nav>
+    </div>
+  </section>
+
+  <main id="main" role="main" class="layout-body-main">
+    <article class="reading-width margin-inline-auto padding-sm padding-top-none padding-top-sm-tablet">
+      <div id="article-header"
+        class="align-items-center display-flex background-color-body margin-bottom-xs display-none-print">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li
+              class="breadcrumbs-item">
+              <a href="../spring.data/index.html" class="cref">Spring.Data</a>
+            </li>
+            <li
+              class="breadcrumbs-item">
+              <a href="index.html" class="cref">Spring.Data.ObjectDataSet</a>
+            </li>
+            <li
+              class="breadcrumbs-item breadcrumbs-item-slashless">
+              TObjectDataSet
+            </li>
+          </ol>
+        </nav>
+
+        <div id="page-actions" class="display-flex flex-wrap-no-wrap margin-left-auto">
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="heading-wrapper" data-heading-level="h1">
+          <a class="anchor-link" href="tobjectdataset.html" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+          <h1>  TObjectDataSet Class</h1>
+        </div>
+
+        <nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm"
+          aria-label="On this page">
+          <h2 id="on-this-page" class="title is-6 margin-block-xs">
+            On this page
+          </h2>
+          <ol id="content-well-in-this-article-list2" class="border-left padding-left-xxs">
+  <li>
+    <a href="#definition">Definition</a>
+  </li>
+  <li>
+    <a href="#constructors">Constructors</a>
+  </li>
+  <li>
+    <a href="#properties">Properties</a>
+  </li>
+  <li>
+    <a href="#methods">Methods</a>
+  </li>
+</ol>
+        </nav>
+
+        <div class="heading-wrapper" data-heading-level="h2">
+  <a class="anchor-link" href="#definition" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+  <h2 id="definition">Definition</h2>
+</div>
+
+<div class="metadata">
+  <dl class="attributeList">
+    <dt>Unit:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Data.ObjectDataSet
+      </span>
+    </dd>
+  </dl>
+  <dl class="attributeList">
+    <dt>Package:</dt>
+    <dd>
+      <span class="break-text">
+          Spring.Data
+      </span>
+    </dd>
+  </dl>
+</div>
+
+
+
+
+<div class="code-block-header margin-top-sm">
+  <span class="code-block-header-language">Delphi</span>
+  <div class="code-block-header-action-bar">
+    <button type="button" class="button button-sm action inner-focus display-none-print">
+      <span class="icon copy has-text-subtle" aria-hidden="true">
+      </span>
+      <span>Copy</span>
+    </button>
+  </div>
+</div>
+<pre class="wrap has-inner-focus"><code class="language-Delphi" dir="ltr">type TObjectDataSet = class(TBaseVirtualDataSet)</code></pre>
+
+
+
+
+
+
+<dl class="attributeList stack">
+  <dt>Inheritance</dt>
+  <dd>
+    <div class="pdlHolder">
+      <div class="pdl">
+        TDataSet
+      </div>
+      <div class="pdl">
+        <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>
+      </div>
+      <span>TObjectDataSet</span>
+    </div>
+  </dd>
+</dl>
+
+
+
+
+
+
+
+
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#constructors" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="constructors">Constructors</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.create.html" class="cref">Create(TComponent)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.destroy.html" class="cref">Destroy</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#properties" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="properties">Properties</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.aftercancel.html" class="cref">AfterCancel</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterclose.html" class="cref">AfterClose</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterdelete.html" class="cref">AfterDelete</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afteredit.html" class="cref">AfterEdit</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterfilter.html" class="cref">AfterFilter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterinsert.html" class="cref">AfterInsert</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afteropen.html" class="cref">AfterOpen</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterpost.html" class="cref">AfterPost</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterrefresh.html" class="cref">AfterRefresh</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.afterscroll.html" class="cref">AfterScroll</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.aftersort.html" class="cref">AfterSort</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforecancel.html" class="cref">BeforeCancel</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforeclose.html" class="cref">BeforeClose</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforedelete.html" class="cref">BeforeDelete</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforeedit.html" class="cref">BeforeEdit</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforefilter.html" class="cref">BeforeFilter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforeinsert.html" class="cref">BeforeInsert</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforeopen.html" class="cref">BeforeOpen</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforepost.html" class="cref">BeforePost</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforerefresh.html" class="cref">BeforeRefresh</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforescroll.html" class="cref">BeforeScroll</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.beforesort.html" class="cref">BeforeSort</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.columnattributeclass.html" class="cref">ColumnAttributeClass</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Class of the column attribute. If properties of the entity class are
+  annotated with this attribute, then the dataset will use these
+  properties as fields. If ColumnAttributeClass is null, all the
+  published properties of the entity class will be used as dataset
+  fields.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.current.html" class="cref">Current</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents current cursor index in the dataset.</p>
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.datalist.html" class="cref">DataList</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  The list of objects to display in the dataset.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.defaultstringfieldlength.html" class="cref">DefaultStringFieldLength</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Default length for the string type field in the dataset.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.filter.html" class="cref">Filter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.filtercache.html" class="cref">FilterCache</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.filtercount.html" class="cref">FilterCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns the total count of filtered records.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.filteroptions.html" class="cref">FilterOptions</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.filtered.html" class="cref">Filtered</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.index.html" class="cref">Index</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Represents the current index of the dataset.</p>
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.indexlist.html" class="cref">IndexList</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.modifiedfields.html" class="cref">ModifiedFields</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.onaddfielddef.html" class="cref">OnAddFieldDef</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.oncalcfields.html" class="cref">OnCalcFields</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.ondeleteerror.html" class="cref">OnDeleteError</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.ondeleterecord.html" class="cref">OnDeleteRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.onediterror.html" class="cref">OnEditError</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.onfilterrecord.html" class="cref">OnFilterRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.ongetfieldvalue.html" class="cref">OnGetFieldValue</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.ongetrecordcount.html" class="cref">OnGetRecordCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.oninsertrecord.html" class="cref">OnInsertRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.onnewrecord.html" class="cref">OnNewRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.onposterror.html" class="cref">OnPostError</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.onupdaterecord.html" class="cref">OnUpdateRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.readonly.html" class="cref">ReadOnly</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.reserved.html" class="cref">Reserved</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.sort.html" class="cref">Sort</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Sorting conditions separated by commas. Can set different sort order
+  for multiple fields - <code>Asc</code>   stands for ascending, <code>Desc</code>   -
+  descending.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.sorted.html" class="cref">Sorted</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Checks if dataset is sorted.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.trackchanges.html" class="cref">TrackChanges</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="member-group">
+  <div class="heading-wrapper" data-heading-level="h2">
+    <a class="anchor-link" href="#methods" aria-label="Link to this heading" title="Link to this heading">
+  <span class="icon link" aria-hidden="true"></span>
+</a>
+    <h2 id="methods">Methods</h2>
+  </div>
+  <div class="has-inner-focus">
+    <table class="table table-sm margin-top-none">
+      <tbody>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.allocrecordbuffer.html" class="cref">AllocRecordBuffer</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.bookmarkvalid.html" class="cref">BookmarkValid(TBookmark)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.clone.html" class="cref">Clone(TObjectDataSet)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Makes the current dataset clone of <code>ASource</code>  .</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.comparebookmarks.html" class="cref">CompareBookmarks(TBookmark, TBookmark)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.comparerecords.html" class="cref">CompareRecords(TObject, TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.createblobstream.html" class="cref">CreateBlobStream(TField, TBlobStreamMode)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.createindexlist.html" class="cref">CreateIndexList(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.dataevent.html" class="cref">DataEvent(TDataEvent, NativeInt)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.datalistcount.html" class="cref">DataListCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.doafterfilter.html" class="cref">DoAfterFilter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.doafteropen.html" class="cref">DoAfterOpen</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.doaftersort.html" class="cref">DoAfterSort</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dobeforefilter.html" class="cref">DoBeforeFilter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dobeforesort.html" class="cref">DoBeforeSort</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dodeleterecord.html" class="cref">DoDeleteRecord(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dofilterrecord.html" class="cref">DoFilterRecord(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dogetfieldvalue.html" class="cref">DoGetFieldValue(TField, Integer, Variant)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.doondatalistchange.html" class="cref">DoOnDataListChange(TObject, TObject, TCollectionChangedAction)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.doonnewrecord.html" class="cref">DoOnNewRecord</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.dopostrecord.html" class="cref">DoPostRecord(Integer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.fieldinsortindex.html" class="cref">FieldInSortIndex(TField)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.freerecordbuffer.html" class="cref">FreeRecordBuffer(TRecordBuffer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getactiverecbuf.html" class="cref">GetActiveRecBuf(TRecordBuffer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getblobfielddata.html" class="cref">GetBlobFieldData(Integer, TBlobByteData)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getbookmarkdata.html" class="cref">GetBookmarkData(TRecordBuffer, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getbookmarkflag.html" class="cref">GetBookmarkFlag(TRecordBuffer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getcanmodify.html" class="cref">GetCanModify</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.getchangedsorttext.html" class="cref">GetChangedSortText(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.getcurrentmodel-1.html" class="cref">GetCurrentModel&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns underlying model object from the current row.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getfielddata.html" class="cref">GetFieldData(TField, TValueBuffer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.getfiltereddatalist-1.html" class="cref">GetFilteredDataList&lt;T&gt;</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            <p>  Returns newly created list of data containing only filtered items.</p>
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getrecno.html" class="cref">GetRecNo</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getrecord.html" class="cref">GetRecord(TRecordBuffer, TGetMode, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.getrecordcount.html" class="cref">GetRecordCount</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.getrecordsize.html" class="cref">GetRecordSize</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.initfilterparser.html" class="cref">InitFilterParser</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.initrttipropertiesfromitemtype.html" class="cref">InitRttiPropertiesFromItemType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internaladdrecord.html" class="cref">InternalAddRecord(TRecordBuffer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalclose.html" class="cref">InternalClose</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalcreatefields.html" class="cref">InternalCreateFields</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internaldelete.html" class="cref">InternalDelete</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internaledit.html" class="cref">InternalEdit</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalfirst.html" class="cref">InternalFirst</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalgetfieldvalue.html" class="cref">InternalGetFieldValue(TField, TObject)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalgetrecord.html" class="cref">InternalGetRecord(TRecordBuffer, TGetMode, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalgotobookmark.html" class="cref">InternalGotoBookmark(TBookmark)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalhandleexception.html" class="cref">InternalHandleException</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalinitfielddefs.html" class="cref">InternalInitFieldDefs</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalinitrecord.html" class="cref">InternalInitRecord(TRecordBuffer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internallast.html" class="cref">InternalLast</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalopen.html" class="cref">InternalOpen</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalpost.html" class="cref">InternalPost</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalrefresh.html" class="cref">InternalRefresh</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.internalsetsort.html" class="cref">InternalSetSort(string, Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.internalsettorecord.html" class="cref">InternalSetToRecord(TRecordBuffer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.iscursoropen.html" class="cref">IsCursorOpen</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.isfiltered.html" class="cref">IsFiltered</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.loadfielddefsfromfields.html" class="cref">LoadFieldDefsFromFields(TFields, TFieldDefs)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.loadfielddefsfromitemtype.html" class="cref">LoadFieldDefsFromItemType</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.locate.html" class="cref">Locate(string, Variant, TLocateOptions)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.lookup.html" class="cref">Lookup(string, Variant, string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.parsergetfunctionvalue.html" class="cref">ParserGetFunctionValue(TObject, string, Variant, Variant)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.parsergetvariablevalue.html" class="cref">ParserGetVariableValue(TObject, string, Variant)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setbookmarkdata.html" class="cref">SetBookmarkData(TRecordBuffer, Pointer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setbookmarkflag.html" class="cref">SetBookmarkFlag(TRecordBuffer, TBookmarkFlag)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setcurrent.html" class="cref">SetCurrent(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setfielddata.html#M-spring.data.virtualdataset.tbasevirtualdataset.setfielddata-tfield-tvaluebuffer-boolean-" class="cref">SetFieldData(TField, TValueBuffer, Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.setfiltertext.html" class="cref">SetFilterText(string)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setfiltered.html" class="cref">SetFiltered(Boolean)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setrecbufsize.html" class="cref">SetRecBufSize</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr data-inherited=true>
+          <td>
+            <span class="break-text">
+              <a href="../spring.data.virtualdataset/tbasevirtualdataset.setrecno.html" class="cref">SetRecNo(Integer)</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+            (Inherited from <a href="../spring.data.virtualdataset/tbasevirtualdataset.html" data-linktype="relative-path">TBaseVirtualDataSet</a>)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="break-text">
+              <a href="tobjectdataset.updatefilter.html" class="cref">UpdateFilter</a>
+            </span>
+          </td>
+          <td class="has-text-wrap">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+      </div>
+
+    </article>
+  </main>
+
+  <aside id="layout-body-aside" class="layout-body-aside" aria-label="Page Outline">
+    <div id="additional-resources" class="right-container padding-sm display-none display-block-desktop height-full"
+      role="complementary" aria-label="Additional resources">
+      <div id="affixed-right-container" class="position-sticky">
+        <nav id="side-doc-outline" class="doc-outline padding-bottom-xs margin-bottom-xs" aria-label="On this page">
+          <h2 class="title is-6 margin-top-xxs margin-bottom-xs">
+            On this page
+          </h2>
+          <ol id="right-rail-on-this-page-list">
+  <li class="border-left-md padding-left-xxs border-color-primary">
+    <a href="#definition" class="font-weight-semibold color-text">Definition</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#constructors" class="color-text-subtle">Constructors</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#properties" class="color-text-subtle">Properties</a>
+  </li>
+  <li class="border-left-md padding-left-xxs border-color-transparent">
+    <a href="#methods" class="color-text-subtle">Methods</a>
+  </li>
+</ol>
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+  <footer id="footer" class="layout-body-footer footer-layout uhf-container  has-padding
+    border-top" role="contentinfo">
+    <p class="color-text-subtle">Unofficial DocInsight showcase for <a href="https://spring4d.org" data-external="true">Spring4D</a>. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.<br>Spring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.<br>Generated from a showcase branch based on Spring4D 2.0.2.<br>Built with <a href="https://docinsight.dev/" data-external="true">DocInsight</a>. View the <a href="https://github.com/docinsight/spring4d" data-external="true">showcase repository</a>.</p>
+  </footer>
+
+</body>
+
+</html>
