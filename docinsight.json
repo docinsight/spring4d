@@ -36,7 +36,12 @@
     "api": {
       "title": "API Reference",
       "type": "delphi",
-      "source": "main"
+      "source": "main",
+      "structure": {
+        "toc": {
+          "scope": "project"
+        }
+      }
     }
   },
   "sites": {
@@ -47,7 +52,7 @@
       "base_path": "/spring4d/2.0",
       "robots": "noindex,follow",
       "footer": {
-        "notice": "Unofficial DocInsight showcase for {{spring4d.homepage}}. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\nSpring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.\nGenerated from a showcase branch based on Spring4D 2.0.2.\nBuilt with {{sys.docinsight}}. View the {{showcase_repo}}."
+        "notice": "Unofficial DocInsight showcase for {{project.homepage}}. Not affiliated with, sponsored by, or endorsed by the Spring4D Team.\nSpring4D source code and documentation are copyright © 2009–present the Spring4D team and licensed under the Apache License 2.0.\nGenerated from a showcase branch based on Spring4D 2.0.2.\nBuilt with {{sys.docinsight}}. View the {{showcase_repo}}."
       }
     }
   },
